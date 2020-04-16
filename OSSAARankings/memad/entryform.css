@@ -1,0 +1,18 @@
+﻿body {
+}
+
+table {
+    width:800px;
+    padding-left:10px;
+    padding-bottom:10px;
+}
+
+.rgEditForm .rgHeader a {
+    display:none !important;
+}
+
+.rgEditForm label {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}

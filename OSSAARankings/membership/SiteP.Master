@@ -1,0 +1,59 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteP.Master.vb" Inherits="OSSAARankings.SiteP" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>OSSAA Membership Website</title>
+    <link href="Styles/SiteMembership.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div>
+                <h1 style="vertical-align: middle;">
+                    <table>
+                        <tr>
+                            <td><img alt="" src="images/ossaalogoBlack_RedGradientSmall.png" />
+                            &nbsp;<span style="height:20pt; font-size:28px; color:Yellow;">2019-20 OSSAA Membership Website</span>
+                            </td>
+                        </tr>
+                    </table>
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:Label ID="lblWelcome" runat="server" Font-Size="8pt"></asp:Label>&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Century Gothic" 
+                    Font-Size="8pt" NavigateUrl="MemberLogin.aspx?logout=1">Log out</asp:HyperLink>
+                &nbsp;&nbsp;
+                <a href="mailto:cwilfong@ossaa.com"><span style="font-family: Century Gothic; font-size: 8pt;">Problems? Email us</span></a>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" BackColor="Gray" Font-Size="Large" ForeColor="White" Height="100%">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="MemberHome.aspx" Text="&nbsp;Home&nbsp;" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberInfoSchool.aspx" Text="&nbsp;School Info&nbsp;" Value="School Info"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberInfoPrin.aspx" Text="&nbsp;Principal Info&nbsp;" Value="Principal"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberInfoJH1.aspx" Text="&nbsp;Jr High 1&nbsp;" Value="Jr High 1"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberInfoJH2.aspx" Text="&nbsp;Jr High 2&nbsp;" Value="Jr High 2"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberRules.aspx" Text="&nbsp;Rules&nbsp;" Value="Rules"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberParticipation.aspx" Text="&nbsp;Participation #&nbsp;" Value="Participation" Enabled="True" Selectable="True"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="MemberHelp.aspx" Text="&nbsp;Help&nbsp;" Value="Help"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*=================       Tabs     ======================*/
+.resp-tabs-list {
+  position: relative;
+  margin-top: 37px; }
+  .resp-tabs-list:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 11px;
+    height: 1px;
+    background: #78b907; }
+  .resp-tabs-list li {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-top: 45px;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff; }
+    .resp-tabs-list li:before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      width: 21px;
+      height: 21px;
+      background: #78b907;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .resp-tabs-list li:hover:before {
+      background: #f91d15; }
+    .resp-tabs-list li + li {
+      margin-left: 153px; }
+      @media (min-width: 980px) and (max-width: 1199px) {
+        .resp-tabs-list li + li {
+          margin-left: 115px; } }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .resp-tabs-list li + li {
+          margin-left: 82px; } }
+
+.resp-accordion {
+  display: none;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #333;
+  padding: 5px 0;
+  background: #78b907; }
+  .resp-accordion:hover {
+    background: #f91d15;
+    color: #ffffff; }
+
+.resp-tabs-list .resp-tab-active:before {
+  background: #f91d15; }
+
+.resp-tabs-container {
+  margin-top: 28px; }
+
+.resp-tab-content {
+  display: none; }
+
+.resp-tab-content-active {
+  display: block; }
+
+@media (max-width: 767px) {
+  .resp-accordion {
+    display: block; }
+
+  .resp-tabs-list {
+    display: none; } }

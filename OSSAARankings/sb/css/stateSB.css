@@ -1,0 +1,113 @@
+﻿body {
+}
+
+.labelHeaderMain
+{
+    font-family: Arial;
+    font-size: 18pt;
+    background-color: Maroon;
+    color: White;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+.labelHeaderMainGray
+{
+    font-family: Sans-Serif, Arial;
+    font-size: 16pt;
+    background-color: Black;
+    color: Yellow;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+.labelHeaderMainMOBI
+{
+    font-family: Arial;
+    font-size: 26pt;
+    background-color: Maroon;
+    color: White;
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+.labelHeader
+{
+    font-family: Arial;
+    font-size: 11pt;
+    background-color: Gray;
+    color: White;
+    font-weight: bold;
+    height: 26px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.labelHeaderMOBI
+{
+    font-family: Arial;
+    font-size: 16pt;
+    background-color: Gray;
+    color: White;
+    font-weight: bold;
+    height: 32px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.linkHeader
+{
+    font-family: Arial;
+    font-size: 11pt;
+    background-color: White;
+    color: Blue;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.linkHeaderMOBI
+{
+    font-family: 'Verdana';
+    font-size: 16pt;
+    background-color: White;
+    color: Blue;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.labelState
+{
+    font-family: Arial;
+    font-size: 14pt;
+}
+.labelSemi
+{
+    font-family: Arial;
+    font-size: 11pt;
+}
+.labelSemiMOBI
+{
+    font-family: 'Verdana';
+    font-size: 14pt;
+}
+.labelQtr
+{
+    font-family: Arial;
+    font-size: 9pt;
+}
+.tabBasketball
+{
+    font-family: Arial;
+    font-size: 8pt;
+}
+

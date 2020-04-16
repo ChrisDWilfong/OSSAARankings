@@ -1,0 +1,35 @@
+﻿
+div.qsf-right-content .qsf-col-wrap 
+{
+    position: static;
+}
+
+.rgEditForm {
+    width: auto !important;
+}
+
+ 
+* + html .rgEditForm.popUpEditForm {
+    width: 900px !important;
+}
+
+
+.rgEditForm > div + div,
+.RadGrid .rgEditForm {
+    height: auto !important;
+    font-family: 'Segoe UI';
+    background-color: gold;
+}
+
+.rgEditForm > div > table {
+    height: 100%;
+    width: 900px;
+}
+
+.rgEditForm > div > table > tbody > tr > td {
+    padding: 4px 10px;
+}
+
+.rfdSelectBoxDropDown {
+    z-index: 100011;
+}

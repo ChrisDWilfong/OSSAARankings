@@ -1,0 +1,28 @@
+﻿OFFICIALS REGISTRATION
+- Session("doRegistration")
+  - "RETURNING-MEMBER"
+  - "UNKNOWN"
+  - "OUT-OF-STATE"
+  - "NEW-MEMBER"
+- Session("regStatus")
+  - "" or <Null>
+  - "START" - User passed validation on the 1st screen and moved on to the 2nd
+  - REGISTRATION1.aspx (if we get here, the user has entered a valid email address)
+    - OnLoad()
+		- If Session("regStatus") = "RETURNING" OR Session("regStatus") = "START-RETURNING" then
+			Session("doRegistration") = "RETURNING-MEMBER" & Go to Show Sports
+		- Else Session("regStatus") = "NEW" OR Session("regStatus") = "START-NEW" then
+			Session("doRegistration") = "NEW-MEMBER" & Go to Show Sports
+			
+  - 'Have you registered this season'
+    - YES : 
+  - 'Have you ever registered in ARBITER'
+
+  Session("regStatus")
+    "START" - First time user clicks Registration button from PORTAL.ASPX and passes Verification
+    "RETURNING" OR "NEW"
+    "START-RETURNING" or "START-NEW" - User clicks and passes 1st Question 
+    "COMPLETE-RETURNING" or "COMPLETE-NEW"
+
+
+  TODO : Add Checkbox Message...

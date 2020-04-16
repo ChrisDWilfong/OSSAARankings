@@ -1,0 +1,335 @@
+﻿
+body 
+{
+}
+@media all and (max-width:3000px) and (min-width:1081px) {
+.panelHome
+{
+    width:960px;
+  
+}
+.panelBig 
+{
+    width:945px;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;  
+    padding:7px;
+}
+.panelSmall
+{
+    width:575px;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+}
+@media all and (max-width:1080px) and (min-width:481px) {
+.panelHome
+{
+    width:960px;
+  
+}
+.panelBig 
+{
+    width:945px;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;  
+    padding:7px;
+}
+.panelSmall
+{
+    width:500px;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+}
+@media all and (max-width:480px) and (min-width:321px) {
+.panelHome
+{
+    width:100%;
+  
+}
+.panelBig 
+{
+    width:95%;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;  
+    padding:7px;
+}
+.panelSmall
+{
+    width:95%;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+}
+@media all and (max-width:320px) {
+.panelHome
+{
+    width:100%;
+  
+}
+.panelBig 
+{
+    width:95%;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;  
+    padding:7px;
+}
+.panelSmall
+{
+    width:95%;
+    border-color:Gray;
+    border-style:solid;
+    border-width:2px;
+    padding:7px;
+}
+}
+.labelDistrict
+{
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+.score
+{
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    color:Maroon;
+    text-align:center;
+    background-color:LightYellow;
+}
+.headerSmall
+{
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#feec8b;
+    text-align:center;
+    background-color:Maroon;
+}
+.headerNote
+{
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    color:yellow;
+    text-align:center;
+    background-color:Navy;
+    vertical-align:middle;
+}
+.subHeader 
+{
+    font-size:16px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif; 
+    font-weight:bold;
+    padding-left:5px;
+    text-align:center;    
+    color:#feec8b;
+    background-color:Maroon;    
+}
+.button 
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:Black;
+}
+.buttonSave
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:White;
+    background-color:Green;
+    border:1px solid Gray;
+    font-weight:bold; 
+}
+.buttonDelete
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:White;
+    background-color:Red;
+    border:1px solid Gray;
+    font-weight:bold; 
+}
+.buttonAccordion
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:White;
+    font-weight:bold; 
+    text-align:left;
+}
+
+.memHeader 
+{
+    font-size:18px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif; 
+    font-weight:bold;
+}
+.DropDown
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    border: 1px groove gray;
+}
+.contentLine
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif; 
+}
+.contentHeader
+{
+    font-size:26px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif; 
+    font-weight:bold;
+}
+.infoCoach
+{
+    font-size:18px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    font-weight:bold;
+    color:Black;
+}
+.infoSchool
+{
+    font-size:16px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-Serif; 
+    font-weight:bold;
+    color:Maroon;
+}
+.infoSport
+{
+    font-size:16px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Navy;
+}
+.infoRankings
+{
+    font-size: 16px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Red;
+    font-weight:bold;
+}
+.perInfoLabel
+{
+    font-size:10px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Gray;
+}
+.perInfoText
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    width:130px;
+}
+.perInfoText2
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    width:270px;
+}
+.perInfoText1
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    width:270px;
+}
+.perInfoDropDown
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+}
+.labelMessage
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Red;
+}
+.rankingsLabel
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Gray;
+    width:15px;
+}
+.rankingsLabelBig
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+}
+.rankingsDropdown
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    width:220px;
+    border: 1px solid black;
+}
+.homeDropdown
+{
+    font-size:16px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    color:Black;
+    background-color:LightYellow;
+    width:200px;
+    border-style:none;
+}
+.schedLabel
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif;
+    font-weight:bold;
+    padding-left:10px;
+}
+.schedText
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    background:Yellow;
+}
+.schedDropDown
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+    font-weight:bold;
+    background:Yellow;
+}
+.schedButton
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, Sans-serif; 
+}
+.schedButtonSave
+{
+    font-size:14px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:White;
+    background-color:Green;
+    font-weight:bold; 
+}
+
+
+

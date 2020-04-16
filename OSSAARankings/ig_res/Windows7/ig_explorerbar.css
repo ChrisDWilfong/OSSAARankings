@@ -1,0 +1,237 @@
+.igeb_Windows7Control
+{
+    background-color: transparent;
+    color: #000000;
+    font-size: xx-small;
+    font-family: Segoe UI, Verdana, Helvetica, sans-serif;
+    overflow-x: hidden;
+    border: solid 1px #cddaea;
+    border-top-width: 0px;
+	
+	/* IE6 fix to remove control's scroll bar */
+	_overflow:hidden!important;
+}
+
+.igeb_Windows7GroupLink
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+    /* Used to give padding to group icons */
+    padding-left:6px
+}
+
+
+.igeb_Windows7Holder
+{
+}
+
+.igeb_Windows7ItemImage
+{   
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+
+.igeb_Windows7Group
+{
+    display: block;
+    height: 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #1E395B;
+}
+
+.igeb_Windows7Group a:visited
+{
+    color: #1E395B;
+}
+
+.igeb_Windows7Group a
+{
+    color: #1E395B;
+}
+
+
+.igeb_Windows7GroupHover
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #0060BF;
+}
+
+.igeb_Windows7GroupHover a:visited
+{
+    color: #0060BF;
+}
+
+.igeb_Windows7GroupHover a
+{
+    color: #0060BF;
+}
+
+.igeb_Windows7GroupLabel
+{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+    text-decoration: none;
+}
+
+.igeb_Windows7ItemLink
+{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.igeb_Windows7GroupSelected
+{
+    background-position: 0px -60px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #1E395B;
+}
+
+.igeb_Windows7GroupSelected a:visited
+{
+    color: #1E395B;
+}
+
+.igeb_Windows7GroupSelected a
+{
+    color: #1E395B;
+}
+
+.igeb_Windows7GroupActive
+{
+    background-position: 0px -60px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #0060BF;
+}
+
+.igeb_Windows7GroupActive a:visited
+{
+    color: #1E395B;
+}
+
+.igeb_Windows7GroupActive a
+{
+    color: #1E395B;
+}
+
+.igeb_Windows7GroupDisabled
+{
+    background-position: 0px -90px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: gray;
+}
+
+.igeb_Windows7Item
+{
+    background-color: #FFFFFF;
+    line-height: 22px;
+}
+
+    /* IE 7 fix to icon bad alignment*/
+    .igeb_Windows7Item  ,.igeb_Windows7ItemActive ,.igeb_Windows7ItemSelected 
+    {
+       min-height:30px;
+       
+       /* IE6 specific fix */
+       _height:30px;
+    }
+    
+.igeb_Windows7ItemLabel
+{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+}
+
+.igeb_Windows7GroupExpanderImage
+{
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.igeb_Windows7ItemSelected
+{
+    background-color:#eceff8;
+    background-repeat: repeat-x;
+    color: #4c607a;
+}
+
+.igeb_Windows7ItemActive
+{
+    background-color:#eceff8;
+    color: #4c607a;
+}
+
+.igeb_Windows7ItemHover
+{
+    background-color:#eceff8;
+    /*color: #FFFFFF;*/
+}
+
+.igeb_Windows7ItemParent
+{
+    background-image: url(images/igeb_Bullet.png);
+    background-repeat: no-repeat;
+}
+
+.igeb_Windows7ItemDisabled
+{
+    
+}
+    /* IE 7 Disabled item fix */
+    
+    .igeb_Windows7ItemDisabled a:visited, .igeb_Windows7ItemDisabled a
+    {
+        color: Gray;
+    }
+
+.igeb_Windows7GroupContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.igeb_Windows7ItemContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.igeb_Windows7ItemHolder
+{
+}
+
+
+
+.igeb_Windows7ItemHolder img
+{
+    vertical-align: middle;
+}

@@ -1,0 +1,67 @@
+﻿body 
+{
+    
+}
+.buttonSave
+{
+    font-size:12px;
+    font-family:Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    color:White;
+    background-color:Green;
+    border:1px solid Gray;
+    font-weight:bold; 
+}
+.headerStyleGrid
+{
+    font-family: Arial;
+    font-size: 11pt;
+    font-weight: bold;
+}
+.headerStyle 
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size: 14pt;
+    font-weight: Bold;
+    color: Maroon;
+}
+.headerStyle18
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size: 18pt;
+    font-weight: Bold;
+    color: Maroon;
+}
+.dropdownBig
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size: 11pt;
+}
+.labelBig
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size : 11pt;
+    font-weight : bold;
+}
+.teamHeaderS
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size : 16pt;
+    font-weight : bold;
+    color: Maroon;
+}
+.teamHeaderSport {
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size : 12pt;
+    font-weight : bold;    
+}        
+.teamHeaderCoach 
+{
+    font-family: Segoe UI, Helvetica, sans-serif, Verdana;
+    font-size : 11pt;
+}
+.panelSmallPublic
+{
+    width:550px;
+    border-style:None;
+    padding:7px;
+}

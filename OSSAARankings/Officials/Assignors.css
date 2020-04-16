@@ -1,0 +1,94 @@
+﻿
+.demo-container {
+    background: url('Images/background_image.png') 0 20px no-repeat;
+    width: 900px;
+    padding: 25px 120px 0 20px;
+    height: 500px; 
+}
+.demo-container .outerMultiPage {
+        height: 387px;
+        width: 893px;
+        margin-left: 15px;
+        margin-top: 30px;
+        border-style: solid;
+        border-color: Gray;
+        background-color: Silver
+}
+.demo-container .innerMultiPage {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        position: relative;
+        margin-bottom: -3px;
+}
+.demo-container .qsf-ib {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+}
+.demo-container ul {
+        margin: 0;
+        padding: 0;
+}
+.ingredients.qsf-ib {
+    vertical-align: top;
+    position: relative;
+    top: -19px;
+    *top: 0px;
+}
+.innerPanel.in {
+    font-family: Segoe UI;
+    color: Black;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: normal;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.ingredients ul {
+    font: Segoe UI;
+    color: #444444;
+    font-size: 13px;
+    list-style-type: none;
+}
+
+.recipeImage.qsf-ib {
+    vertical-align: top;
+    margin: 0 15px;
+}
+
+.demo-container .subtitle {
+    font: Segoe UI;
+    color: #444444;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.disclaimer p {
+    font: Segoe UI;
+    color: #888888;
+    font-size: 12px;
+    left: 1px;
+    margin: 0;
+    position: relative;
+    top: -12px;
+    width: 390px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.demo-container .RadTabStrip .rtsImg,
+.demo-container .RadTabStripVertical .rtsImg {
+    border: 0 none;
+    margin-left: -2px;
+    margin-top: 7px;
+    vertical-align: middle;
+}
+.demo-container .RadRating {
+    margin-bottom: 22px;
+    position: relative;
+    top: 15px;
+    *top: -3px;
+
+}

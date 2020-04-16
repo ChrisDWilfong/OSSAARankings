@@ -1,0 +1,622 @@
+.igg_LucidDreamControl
+{
+	background-color:#FFFFFF;
+	background-repeat:repeat-x;
+	font-size:11px;
+	border:solid 1px #999999;
+}
+
+
+.igg_LucidDreamHeader
+{
+	background-color:#6EA3CC;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_header.gif);
+	height: 25px;
+	color: White;
+}
+
+
+.igg_LucidDreamHeaderCaption
+{
+	font-size: 12px;
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+.igg_LucidDreamFooter
+{
+	background-color:#EEEEEE;
+	height: 21px;
+	line-height: 21px;
+	background-color:#eeeeee;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_FooterBG.png);
+}
+
+
+.igg_LucidDreamFooterCaption
+{
+	font-weight:normal;
+	font-size:10px;
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+tbody.igg_LucidDreamItemIE6 tr td
+{
+	background-color:White;
+	border-top:solid 1px #D8D8D8;
+	padding:5px 8px 5px 8px;
+	overflow: hidden;
+	height: 20px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+tbody.igg_LucidDreamItem>tr>td
+{
+	background-color:White;
+	border-top:solid 1px #D8D8D8;
+	padding:5px 8px 5px 8px;
+	overflow: hidden;
+	height: 20px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igg_LucidDreamScrollbarIntersection
+{
+}
+
+
+.igg_LucidDreamRowSelector
+{
+	background-color:White;
+	border-top:solid 1px #D8D8D8;
+	border-right:solid 1px #D8D8D8;
+	width: 35px;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igg_LucidDreamPager
+{
+	background-color:#F0F0F0;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:right;
+}
+
+
+.igg_LucidDreamPageLink
+{
+	padding-right:10px;
+	cursor:hand;
+	color:DimGray;
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+
+.igg_LucidDreamFilterRuleDropDown
+{
+	background-color:White;
+	border:solid 1px #999999;
+	width: 150px;
+	overflow: auto;
+	max-height: 150px;
+	height: auto !important;
+	height: 150px;
+}
+
+
+.igg_LucidDreamFilterButton
+{
+	background-color:Transparent;
+	border-style:solid;
+	border-width:0px;
+	height: 18px;
+}
+
+
+.igg_LucidDreamResizeIndicator
+{
+	background-color:#4679A6;
+	width: 2px;
+}
+
+
+tbody tr.igg_LucidDreamAltIE6 td
+{
+	background-color:White;
+	padding:5px 8px 5px 8px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+tbody>tr.igg_LucidDreamAlt>td
+{
+	background-color:White;
+	padding:5px 8px 5px 8px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igg_LucidDreamHeaderRowSelector
+{
+	background-color:Transparent;
+	background-image: url(transparent);
+	border-width:0px;
+}
+
+
+.igg_LucidDreamFooterRowSelector
+{
+	background-color:Transparent;
+	background-image: url(transparent);
+	border-width:0px;
+}
+
+
+.igg_LucidDreamSelectedHeader
+{
+}
+
+tbody.igg_LucidDreamFixedColumnCellCssClass>tr>td
+{
+	background-color: #EFF3F8;
+}
+
+.igg_LucidDreamFixedColumnFooterCssClass
+{
+	font-weight: bold;
+}
+
+.igg_LucidDreamPageCurrent
+{
+	padding-right:10px;
+}
+
+
+.igg_LucidDreamAddNewRowSelectorImageCssClass
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/addnewrow_image.gif);
+}
+
+
+.igg_LucidDreamAddNewRowSelectorCssClass
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_LucidDreamFilterRow
+{
+	font-size:10px;
+	border-top:solid 0px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	height: 22px;
+	color:Black;
+}
+
+
+.igg_LucidDreamFilterRuleDropDownItem
+{
+	font-size:11px;
+	padding:1px 3px 1px 3px;
+}
+
+
+.igg_LucidDreamFilterRowSelectorImage
+{
+}
+
+
+.igg_LucidDreamFilterRowSelectorCssClass
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tr.igg_LucidDreamFilterRowIE6 td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tr.igg_LucidDreamFilterRow>td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_LucidDreamHeaderScrollbarIntersection
+{
+}
+
+
+.igg_LucidDreamFooterScrollbarIntersection
+{
+}
+
+
+.igg_LucidDreamSelectedRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+	background-color: #8DC6EC;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+
+.igg_LucidDreamSelectedRowSelectorImage
+{
+}
+
+
+tr.igg_LucidDreamAddNewRowTopIE6 td
+{
+}
+
+
+tr.igg_LucidDreamAddNewRowTop>td
+{
+}
+
+
+tr.igg_LucidDreamAddNewRowBottomIE6 td
+{
+}
+
+tr.igg_LucidDreamAddNewRowBottom>td
+{
+}
+
+.igg_LucidDreamFilterRuleDropDownSelectedItem
+{
+	background-image: url(images/igg_header.gif);
+	font-size:11px;
+	padding:1px 3px 1px 3px;
+}
+
+
+tr.igg_LucidDreamFilterRowTopIE6 td
+{
+}
+
+
+tr.igg_LucidDreamFilterRowTop>td
+{
+}
+
+
+tr.igg_LucidDreamFilterRowBottomIE6 td
+{
+}
+
+
+tr.igg_LucidDreamFilterRowBottom>td
+{
+}
+
+
+tbody tr td.igg_LucidDreamSelectedCellIE6
+{
+	background-color: #8DC6EC;
+}
+
+
+tbody>tr>td.igg_LucidDreamSelectedCell
+{
+	background-color: #8DC6EC;
+}
+
+
+.igg_LucidDreamAddNewRowScrollbarIntersection
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_LucidDreamFilterDisabled
+{
+	background-color:#969696;
+	border:solid 4px Black;
+}
+
+
+.igg_LucidDreamFilterScrollbarIntersection
+{
+	background-color:#EEEEEE;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tbody tr td.igg_LucidDreamActiveCellIE6
+{
+}
+
+
+tbody>tr>td.igg_LucidDreamActiveCell
+{
+}
+
+
+.igg_LucidDreamActiveRow
+{
+}
+
+
+.igg_LucidDreamActiveColumn
+{
+}
+
+
+.igg_LucidDreamActiveRowSelectorImage
+{
+	color:White;
+}
+
+
+.igg_LucidDreamActiveRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+	background-repeat: no-repeat;
+	background-color: #8DC6EC;
+}
+
+
+.igg_LucidDreamFilterRuleDropDownHoverItem
+{
+	background-image: url(images/igg_header.gif);
+	font-size:11px;
+	padding:1px 3px 1px 3px;
+}
+
+
+.igg_LucidDreamEditCell
+{
+	background:White !important;
+	border:solid 1px #AAAAAA !important;
+}
+
+
+.igg_LucidDreamFixedColumnSeparatorCssClass
+{
+	width: 3px;
+	background-color: #AAAAAA; 
+}
+
+.igg_LucidDreamFixedColumnPinButtonCssClass
+{
+	padding: 0px 3px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.igg_LucidDreamFixedColumnHeaderCSSClass
+{
+}
+
+tr.igg_LucidDreamAddNewRowIE6 td
+{
+	background-color:#F7F7F7;
+	font-size:10px;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	padding-left:7px;
+	height: 22px;
+	overflow: hidden;
+}
+
+
+tr.igg_LucidDreamAddNewRow>td
+{
+	background-color:#F7F7F7;
+	font-size:10px;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	padding-left:7px;
+	height: 22px;
+	overflow: hidden;
+}
+
+
+.igg_LucidDreamVirtualScrollTooltip
+{
+	background-color:#6EA3CC;
+	font-size:10px;
+	border:solid 1px #F0F0F0;
+	padding:3px;
+	color: #FFFFFF;
+	text-align:center;
+}
+
+
+.igg_LucidDreamTopDragIndicator
+{
+      background-image:url("images/igg_TopDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px; 
+      height:6px;
+      margin-top: 2px;
+      z-index: 100;
+}
+
+.igg_LucidDreamMiddleDragIndicator
+{
+      background-image:url("images/igg_MiddleDragIndicator.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      width:11px; 
+}
+
+.igg_LucidDreamBottomDragIndicator
+{
+      background-image:url("images/igg_BottomDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px; 
+      height:6px;
+      position: absolute;
+      margin-top: -2px;
+      z-index: 100;   
+}
+
+/*********************/
+/**  Summary styles **/
+/*********************/
+
+.igg_LucidDreamFilterRuleDropDown 
+{
+    font-family:verdana;
+    font-size:xx-small;
+    
+    background:#fff url(images/igg_SummaryDropDownBG.png) repeat-x scroll;
+    border:1px solid #83AFDF;
+    
+    /*Rounded corners*/
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    
+    /*Shadow*/
+    -moz-box-shadow: 0 4px 8px 0 #5A5A5A;
+    -webkit-box-shadow: 0 4px 8px 0 #5A5A5A;
+    box-shadow : 0 4px 8px 0 #5A5A5A; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A');
+    
+}
+
+.igg_LucidDreamFooterSummary
+{
+  border-bottom:1px solid #CBCBCB;
+  color:#444444;
+}
+
+/** Removed Property (Olga Kerchentseva mail 5/25/2010 )**/
+/*
+.igg_LucidDreamFooterSummariesCaption
+{
+    color:#000;
+    background:#88C2E8 url(images/igg_FooterSummariesBG.png) repeat-x scroll;
+} */
+
+.igg_LucidDreamSummaryDropDown
+{
+    font-family:verdana;
+    font-size:11px;
+    
+    background:#fff url(images/igg_SummaryDropDownBG.png) repeat-x scroll;
+    padding:12px;
+    border:1px solid #83AFDF;
+    
+    /*Rounded corners*/
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    
+    /*Shadow*/
+    -moz-box-shadow: 0 4px 8px 0 #5A5A5A;
+    -webkit-box-shadow: 0 4px 8px 0 #5A5A5A;
+    box-shadow : 0 4px 8px 0 #5A5A5A; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A');
+    
+}
+    .igg_LucidDreamSummaryDropDown input
+    {
+        margin-top:10px;
+        margin-right:3px;
+        width:55px;
+        
+        border:1px solid #6a9cc9;
+        background: #78bae5 url(images/igg_ButtonsBG.png) repeat-x scroll;
+        color:#fff;
+        
+        -webkit-border-radius: 3px;    
+        -moz-border-radius: 3px;
+    }
+    
+.igg_LucidDreamSummaryDropDownItem
+{
+    cursor:default;
+}
+
+    .igg_LucidDreamSummaryDropDownItem img
+    {
+        margin-right:5px;
+        cursor:pointer;
+    }
+
+.igg_LucidDreamSummaryButton 
+{
+    background:none;
+    border:medium none;
+    cursor:pointer;
+    margin:0;
+    padding:0;
+}
+
+/******************/
+
+
+@media print{.igg_LucidDreamControl, .igg_LucidDreamControl div{width:auto !important; height:auto !important; overflow: visible !important;}}

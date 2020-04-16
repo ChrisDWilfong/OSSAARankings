@@ -1,0 +1,237 @@
+.igeb_Office2007SilverControl
+{
+    background-color: transparent;
+    color: #000000;
+    font-size: xx-small;
+    font-family: Segoe UI, Verdana, Helvetica, sans-serif;
+    overflow-x: hidden;
+    border: solid 1px #6F7075;
+    border-top-width: 0px;
+	
+	/* IE6 fix to remove control's scroll bar */
+	_overflow:hidden!important;
+}
+
+.igeb_Office2007SilverGroupLink
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+    /* Used to give padding to group icons */
+    padding-left:6px
+}
+
+.igeb_Office2007SilverHolder
+{
+}
+
+.igeb_Office2007SilverItemImage
+{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.igeb_Office2007SilverGroup
+{
+    display: block;
+    height: 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    background-position: 0px -60px;
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroup a:visited
+{
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroup a
+{
+    color: #4C535E;
+}
+
+
+.igeb_Office2007SilverGroupHover
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupHover a:visited
+{
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupHover a
+{
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupLabel
+{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+    text-decoration: none;
+}
+
+.igeb_Office2007SilverItemLink
+{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.igeb_Office2007SilverGroupSelected
+{
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #000000;
+}
+
+.igeb_Office2007SilverGroupSelected a:visited
+{
+    color: #000000;
+}
+
+.igeb_Office2007SilverGroupSelected a
+{
+    color: #000000;
+}
+
+.igeb_Office2007SilverGroupActive
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupActive a:visited
+{
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupActive a
+{
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverGroupDisabled
+{    background-position: 0px -90px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #4C535E;
+}
+
+.igeb_Office2007SilverItem
+{
+    background-color: #FFFFFF;
+    /*line-height: 22px;*/
+}
+    /* IE 7 fix to icon bad alignment*/
+    .igeb_Office2007SilverItem  ,.igeb_Office2007SilverItemActive ,.igeb_Office2007SilverItemSelected 
+    {
+       min-height:30px;
+       
+       /* IE6 specific fix */
+       _height:30px;
+    }
+
+.igeb_Office2007SilverItemLabel
+{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+}
+
+.igeb_Office2007SilverGroupExpanderImage
+{
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.igeb_Office2007SilverItemImage
+{
+    vertical-align: middle;
+}
+
+.igeb_Office2007SilverItemSelected
+{
+    background-color: #FFE7A2;
+}
+
+.igeb_Office2007SilverItemActive
+{   
+    background-color: #FFE7A2;
+}
+
+.igeb_Office2007SilverItemHover
+{
+    background-color: #FFE7A2;
+}
+
+.igeb_Office2007SilverItemParent 
+{
+	
+}
+
+.igeb_Office2007SilverItemDisabled
+{
+    
+}
+    /* IE 7 Disabled item fix */
+
+    .igeb_Office2007SilverItemDisabled a:visited, .igeb_Office2007SilverItemDisabled a
+    {
+        color: Gray;
+    }
+    
+.igeb_Office2007SilverGroupContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.igeb_Office2007SilverItemContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.igeb_Office2007SilverItemHolder
+{
+}
+
+
+
+.igeb_Office2007SilverItemHolder img
+{
+    vertical-align: middle;
+}
+

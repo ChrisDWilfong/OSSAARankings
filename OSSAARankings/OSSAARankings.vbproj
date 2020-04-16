@@ -1,0 +1,3408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F6197EA8-1AD7-4E5B-8255-FD4C221EDC4D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OSSAARankings</RootNamespace>
+    <AssemblyName>OSSAARankings</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OSSAARankings.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OSSAARankings.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Downloads\AJAX Toolkit 4.0\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Web.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.Shared.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.UltraWebGrid.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.UltraWebTab.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebDateChooser.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.WebUI.WebSchedule.v10.2, Version=10.2.20102.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2018.3.516.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Web.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2018.2.516.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2018.2.516.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2018.2.511.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2018.2.511.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2018.2.511.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2018.2.511.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2018.2.511.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2018.2.516.40\AdditionalLibraries\Bin40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adSports.aspx" />
+    <Content Include="admin\adPictures.aspx" />
+    <Content Include="admin\Contacts.aspx" />
+    <Content Include="admin\DashboardMembership.aspx" />
+    <Content Include="admin\DashboardMembershipDetails.ascx" />
+    <Content Include="admin\DashboardOfficialsPages.aspx" />
+    <Content Include="admin\EWRankings.aspx" />
+    <Content Include="admin\GolfScores.aspx" />
+    <Content Include="admin\MemberLoginLogs.aspx" />
+    <Content Include="admin\NameSearch.aspx" />
+    <Content Include="admin\NewYear.aspx" />
+    <Content Include="admin\OSSAAPassAdmin.aspx" />
+    <Content Include="admin\RankingsStatsWinter.aspx" />
+    <Content Include="admin\sbSwimming.aspx" />
+    <Content Include="admin\sendEmails.aspx" />
+    <Content Include="admin\Site.css" />
+    <Content Include="admin\statsRankingsWinter.aspx" />
+    <Content Include="admin\stats.aspx" />
+    <Content Include="admin\statsLockout.aspx" />
+    <Content Include="admin\statsRankingsFall.aspx" />
+    <Content Include="admin\unpw.aspx" />
+    <Content Include="admin\warnings.aspx" />
+    <Content Include="AjaxControlToolkit.dll" />
+    <Content Include="apicall\TestCall.aspx" />
+    <Content Include="AverageGolfScoresBoys.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Infragistics4.Web.v10.2.dll" />
+    <Content Include="bin\Infragistics4.WebUI.Shared.v10.2.dll" />
+    <Content Include="bin\Infragistics4.WebUI.UltraWebGrid.v10.2.dll" />
+    <Content Include="bin\Infragistics4.WebUI.UltraWebTab.v10.2.dll" />
+    <Content Include="bin\Infragistics4.WebUI.WebDateChooser.v10.2.dll" />
+    <Content Include="bin\Infragistics4.WebUI.WebSchedule.v10.2.dll" />
+    <Content Include="bin\OSSAARankings.dll" />
+    <Content Include="bin\OSSAARankings.dll.config" />
+    <Content Include="bin\OSSAARankings.pdb" />
+    <Content Include="bin\OSSAARankings.xml" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="BOS\Schedule.aspx" />
+    <Content Include="BOS\site\bat\rd-mailform.config.json" />
+    <Content Include="BOS\site\bat\rd-mailform.tpl" />
+    <Content Include="BOS\site\fonts\fl-bigmug-line.eot" />
+    <Content Include="BOS\site\fonts\fl-bigmug-line.ttf" />
+    <Content Include="BOS\site\fonts\fl-bigmug-line.woff" />
+    <Content Include="BOS\site\fonts\fl-budicons-free.eot" />
+    <Content Include="BOS\site\fonts\fl-budicons-free.ttf" />
+    <Content Include="BOS\site\fonts\fl-budicons-free.woff" />
+    <Content Include="BOS\site\fonts\fl-budicons-launch.eot" />
+    <Content Include="BOS\site\fonts\fl-budicons-launch.ttf" />
+    <Content Include="BOS\site\fonts\fl-budicons-launch.woff" />
+    <Content Include="BOS\site\fonts\fl-justicons.eot" />
+    <Content Include="BOS\site\fonts\fl-justicons.ttf" />
+    <Content Include="BOS\site\fonts\fl-justicons.woff" />
+    <Content Include="BOS\site\fonts\fontawesome-webfont.eot" />
+    <Content Include="BOS\site\fonts\fontawesome-webfont.ttf" />
+    <Content Include="BOS\site\fonts\fontawesome-webfont.woff" />
+    <Content Include="BOS\site\fonts\fontawesome-webfont.woff2" />
+    <Content Include="BOS\site\fonts\FontAwesome.otf" />
+    <Content Include="BOS\site\fonts\lg.eot" />
+    <Content Include="BOS\site\fonts\lg.ttf" />
+    <Content Include="BOS\site\fonts\lg.woff" />
+    <Content Include="BOS\site\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="BOS\site\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="BOS\site\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="BOS\site\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="BOS\site\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="BOS\site\fonts\MaterialIcons-Regular.ijmap" />
+    <Content Include="BOS\site\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="BOS\site\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="BOS\site\fonts\MaterialIcons-Regular.woff2" />
+    <None Include="Connected Services\LOCData\LOCData.disco" />
+    <None Include="Connected Services\LOCData\configuration91.svcinfo" />
+    <None Include="Connected Services\LOCData\configuration.svcinfo" />
+    <None Include="Connected Services\LOCData\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="bin\Telerik.Windows.Documents.Core.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Flow.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll" />
+    <Content Include="bin\Telerik.Windows.Zip.dll" />
+    <Content Include="BOS\ListOfChampions.aspx" />
+    <Content Include="BOS\site\404-error-page.html" />
+    <Content Include="BOS\site\about-us.html" />
+    <Content Include="BOS\site\albums.html" />
+    <Content Include="BOS\site\bat\phpmailer\class.phpmailer.php" />
+    <Content Include="BOS\site\bat\phpmailer\class.pop3.php" />
+    <Content Include="BOS\site\bat\phpmailer\class.smtp.php" />
+    <Content Include="BOS\site\bat\phpmailer\PHPMailerAutoload.php" />
+    <Content Include="BOS\site\bat\rd-mailform.php" />
+    <Content Include="BOS\site\bat\rd-search.php" />
+    <Content Include="BOS\site\bat\reCaptcha.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\autoload.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\ReCaptcha.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod\Curl.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod\CurlPost.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod\Post.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod\Socket.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestMethod\SocketPost.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\RequestParameters.php" />
+    <Content Include="BOS\site\bat\ReCaptcha\Response.php" />
+    <Content Include="BOS\site\blog-elements.html" />
+    <Content Include="BOS\site\blog-post.html" />
+    <Content Include="BOS\site\checkout.html" />
+    <Content Include="BOS\site\coming-soon.html" />
+    <Content Include="BOS\site\contact-us.html" />
+    <Content Include="BOS\site\css\bootstrap.css" />
+    <Content Include="BOS\site\css\bootstrap2.css" />
+    <Content Include="BOS\site\css\fonts.css" />
+    <Content Include="BOS\site\css\style-baseball.css" />
+    <Content Include="BOS\site\css\style-basketball.css" />
+    <Content Include="BOS\site\css\style-billiards.css" />
+    <Content Include="BOS\site\css\style-bowling.css" />
+    <Content Include="BOS\site\css\style-rugby.css" />
+    <Content Include="BOS\site\css\style.css" />
+    <Content Include="BOS\site\fonts\fl-bigmug-line.svg" />
+    <Content Include="BOS\site\fonts\fl-budicons-free.svg" />
+    <Content Include="BOS\site\fonts\fl-budicons-launch.svg" />
+    <Content Include="BOS\site\fonts\fl-justicons.svg" />
+    <Content Include="BOS\site\fonts\fontawesome-webfont.svg" />
+    <Content Include="BOS\site\fonts\lg.svg" />
+    <Content Include="BOS\site\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="BOS\site\fullwidth-shop.html" />
+    <Content Include="BOS\site\gallery.html" />
+    <Content Include="BOS\site\game-overview.html" />
+    <Content Include="BOS\site\game-schedule.html" />
+    <Content Include="BOS\site\grid-shop.html" />
+    <Content Include="BOS\site\home-baseball.html" />
+    <Content Include="BOS\site\home-basketball.html" />
+    <Content Include="BOS\site\home-billiards.html" />
+    <Content Include="BOS\site\home-bowling.html" />
+    <Content Include="BOS\site\home-rugby.html" />
+    <Content Include="BOS\site\images\about-us-1-529x350.jpg" />
+    <Content Include="BOS\site\images\about-us-2-529x350.jpg" />
+    <Content Include="BOS\site\images\about-us-3-529x350.jpg" />
+    <Content Include="BOS\site\images\ajax-loader.gif" />
+    <Content Include="BOS\site\images\album1-image-1-1200x667-original.jpg" />
+    <Content Include="BOS\site\images\album1-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album1-image-2-1199x800-original.jpg" />
+    <Content Include="BOS\site\images\album1-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album1-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\album1-image-3-800x800-original.jpg" />
+    <Content Include="BOS\site\images\album2-image-1-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album2-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album2-image-2-1200x696-original.jpg" />
+    <Content Include="BOS\site\images\album2-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album2-image-3-1200x797-original.jpg" />
+    <Content Include="BOS\site\images\album2-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\album3-image-1-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album3-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album3-image-2-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album3-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album3-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\album3-image-3-800x800-original.jpg" />
+    <Content Include="BOS\site\images\album4-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album4-image-2-1200x770-original.jpg" />
+    <Content Include="BOS\site\images\album4-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album4-image-3-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album4-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\album5-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album5-image-2-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album5-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album5-image-3-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\album5-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\album6-image-1-1190x800-original.jpg" />
+    <Content Include="BOS\site\images\album6-image-1-370x295.jpg" />
+    <Content Include="BOS\site\images\album6-image-2-1199x800-original.jpg" />
+    <Content Include="BOS\site\images\album6-image-2-370x295.jpg" />
+    <Content Include="BOS\site\images\album6-image-3-1117x800-original.jpg" />
+    <Content Include="BOS\site\images\album6-image-3-370x295.jpg" />
+    <Content Include="BOS\site\images\baseball\blog-element-1-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\blog-element-2-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\blog-element-3-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\blog-element-4-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\favicon.ico" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-1-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-1-original.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-2-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-2-original.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-3-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-3-original.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-4-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-4-original.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-5-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-5-original.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-6-105x105.jpg" />
+    <Content Include="BOS\site\images\baseball\gallery-baseball-6-original.jpg" />
+    <Content Include="BOS\site\images\baseball\icon-chat-38x35.png" />
+    <Content Include="BOS\site\images\baseball\icon-team-34x34.png" />
+    <Content Include="BOS\site\images\baseball\logo-baseball-93x94.png" />
+    <Content Include="BOS\site\images\baseball\logo-rogers-81x81.png" />
+    <Content Include="BOS\site\images\baseball\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\baseball\player-0-162x264.png" />
+    <Content Include="BOS\site\images\baseball\post-baseball-1-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-10-370x264.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-2-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-3-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-4-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-5-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-6-370x239.png" />
+    <Content Include="BOS\site\images\baseball\post-baseball-7-370x239.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-8-370x264.jpg" />
+    <Content Include="BOS\site\images\baseball\post-baseball-9-370x264.jpg" />
+    <Content Include="BOS\site\images\baseball\post-gloria-1-771x412.jpg" />
+    <Content Include="BOS\site\images\baseball\post-lily-1-570x352.jpg" />
+    <Content Include="BOS\site\images\baseball\post-lily-2-570x352.jpg" />
+    <Content Include="BOS\site\images\baseball\post-lily-3-570x352.jpg" />
+    <Content Include="BOS\site\images\baseball\slider-slide-1-1920x652.jpg" />
+    <Content Include="BOS\site\images\baseball\slider-slide-2-1920x652.jpg" />
+    <Content Include="BOS\site\images\baseball\slider-slide-3-1920x652.jpg" />
+    <Content Include="BOS\site\images\baseball\team-athletic-29x26.png" />
+    <Content Include="BOS\site\images\baseball\team-athletic-33x30.png" />
+    <Content Include="BOS\site\images\baseball\team-base-33x25.png" />
+    <Content Include="BOS\site\images\baseball\team-base-79x59.png" />
+    <Content Include="BOS\site\images\baseball\team-baseball-rogers-44x44.png" />
+    <Content Include="BOS\site\images\baseball\team-baseball-sport-59x46.png" />
+    <Content Include="BOS\site\images\baseball\team-boom-31x27.png" />
+    <Content Include="BOS\site\images\baseball\team-dragons-43x26.png" />
+    <Content Include="BOS\site\images\baseball\team-piranha-30x30.png" />
+    <Content Include="BOS\site\images\baseball\team-rogers-34x34.png" />
+    <Content Include="BOS\site\images\baseball\team-rogers-67x67.png" />
+    <Content Include="BOS\site\images\baseball\team-rogers-87x87.png" />
+    <Content Include="BOS\site\images\baseball\team-sport-105x81.png" />
+    <Content Include="BOS\site\images\baseball\team-sport-34x28.png" />
+    <Content Include="BOS\site\images\baseball\team-sport-40x32.png" />
+    <Content Include="BOS\site\images\baseball\thumb-video-769x352.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-1-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-1-419x298.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-2-1200x801-original.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-2-419x298.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-3-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-3-419x298.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-4-1200x831-original.jpg" />
+    <Content Include="BOS\site\images\basketball\basketball-gallery-4-419x298.jpg" />
+    <Content Include="BOS\site\images\basketball\favicon.ico" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-1-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-1-original.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-2-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-2-original.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-3-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-3-original.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-4-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-4-original.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-5-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-5-original.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-6-116x116.jpg" />
+    <Content Include="BOS\site\images\basketball\gallery-basketball-6-original.jpg" />
+    <Content Include="BOS\site\images\basketball\logo-default-129x81.png" />
+    <Content Include="BOS\site\images\basketball\logo-inverse-129x81.png" />
+    <Content Include="BOS\site\images\basketball\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\basketball\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\basketball\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\basketball\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\basketball\partners-1-121x33.png" />
+    <Content Include="BOS\site\images\basketball\partners-2-88x59.png" />
+    <Content Include="BOS\site\images\basketball\partners-3-97x31.png" />
+    <Content Include="BOS\site\images\basketball\partners-4-95x52.png" />
+    <Content Include="BOS\site\images\basketball\partners-5-102x53.png" />
+    <Content Include="BOS\site\images\basketball\post-basketball-1-769x416.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-2-207x152.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-3-769x416.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-4-207x152.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-5-370x279.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-6-370x279.jpg" />
+    <Content Include="BOS\site\images\basketball\post-basketball-7-370x279.jpg" />
+    <Content Include="BOS\site\images\basketball\roster-player-1-368x286.jpg" />
+    <Content Include="BOS\site\images\basketball\roster-player-2-368x286.jpg" />
+    <Content Include="BOS\site\images\basketball\roster-player-3-368x286.jpg" />
+    <Content Include="BOS\site\images\basketball\roster-player-4-368x286.jpg" />
+    <Content Include="BOS\site\images\basketball\slider-slide-1-1920x711.jpg" />
+    <Content Include="BOS\site\images\basketball\slider-slide-2-1920x711.jpg" />
+    <Content Include="BOS\site\images\basketball\slider-slide-3-1920x711.jpg" />
+    <Content Include="BOS\site\images\basketball\sport-elements-1-357x321.jpg" />
+    <Content Include="BOS\site\images\basketball\sport-elements-2-357x321.jpg" />
+    <Content Include="BOS\site\images\basketball\team-athletic-29x26.png" />
+    <Content Include="BOS\site\images\basketball\team-athletic-48x43.png" />
+    <Content Include="BOS\site\images\basketball\team-bulls-34x28.png" />
+    <Content Include="BOS\site\images\basketball\team-bulls-50x40.png" />
+    <Content Include="BOS\site\images\basketball\team-dragons-42x26.png" />
+    <Content Include="BOS\site\images\basketball\team-dragons-61x38.png" />
+    <Content Include="BOS\site\images\basketball\team-hawks-33x25.png" />
+    <Content Include="BOS\site\images\basketball\team-piranha-30x30.png" />
+    <Content Include="BOS\site\images\basketball\team-rockets-31x27.png" />
+    <Content Include="BOS\site\images\basketball\team-rockets-47x41.png" />
+    <Content Include="BOS\site\images\bg-breadcrumbs-1-1920x726.jpg" />
+    <Content Include="BOS\site\images\bg-breadcrumbs-1-1920x7261.jpg" />
+    <Content Include="BOS\site\images\bg-image-1-1920x1100.jpg" />
+    <Content Include="BOS\site\images\bg-pattern-boxed.png" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-1-1200x787-original.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-1-419x298.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-2-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-2-419x298.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-3-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-3-419x298.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-4-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\billiards\billiards-gallery-4-419x298.jpg" />
+    <Content Include="BOS\site\images\billiards\blog-element-1-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\blog-element-2-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\blog-element-3-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\favicon.ico" />
+    <Content Include="BOS\site\images\billiards\home-post-1-769x416.jpg" />
+    <Content Include="BOS\site\images\billiards\home-post-2-370x279.jpg" />
+    <Content Include="BOS\site\images\billiards\home-post-3-370x279.jpg" />
+    <Content Include="BOS\site\images\billiards\home-post-4-370x279.jpg" />
+    <Content Include="BOS\site\images\billiards\home-post-5-769x416.jpg" />
+    <Content Include="BOS\site\images\billiards\logo-default-99x66.png" />
+    <Content Include="BOS\site\images\billiards\logo-inverse-99x66.png" />
+    <Content Include="BOS\site\images\billiards\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\billiards\partners-1-121x33.png" />
+    <Content Include="BOS\site\images\billiards\partners-1-inverse-75x42.png" />
+    <Content Include="BOS\site\images\billiards\partners-2-140x42.png" />
+    <Content Include="BOS\site\images\billiards\partners-2-inverse-78x41.png" />
+    <Content Include="BOS\site\images\billiards\partners-3-97x31.png" />
+    <Content Include="BOS\site\images\billiards\partners-3-inverse-65x44.png" />
+    <Content Include="BOS\site\images\billiards\partners-4-110x44.png" />
+    <Content Include="BOS\site\images\billiards\partners-5-89x77.png" />
+    <Content Include="BOS\site\images\billiards\post-lily-1-570x352.jpg" />
+    <Content Include="BOS\site\images\billiards\post-lily-2-570x352.jpg" />
+    <Content Include="BOS\site\images\billiards\post-lily-3-570x352.jpg" />
+    <Content Include="BOS\site\images\billiards\slider-slide-1-1920x652.jpg" />
+    <Content Include="BOS\site\images\billiards\slider-slide-2-1920x652.jpg" />
+    <Content Include="BOS\site\images\billiards\slider-slide-3-1920x652.jpg" />
+    <Content Include="BOS\site\images\billiards\sport-elements-1-357x321.jpg" />
+    <Content Include="BOS\site\images\billiards\sport-elements-2-357x321.jpg" />
+    <Content Include="BOS\site\images\billiards\team-ebdon-44x44.jpg" />
+    <Content Include="BOS\site\images\billiards\team-marko-fu-44x44.jpg" />
+    <Content Include="BOS\site\images\blog-element-1-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-2-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-3-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-4-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-5-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-6-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-7-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-element-8-94x94.jpg" />
+    <Content Include="BOS\site\images\blog-post-1-683x407.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-1-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-2-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-3-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-4-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-5-94x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-6-94x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-7-94x94.jpg" />
+    <Content Include="BOS\site\images\bowling\blog-element-8-94x94.jpg" />
+    <Content Include="BOS\site\images\bowling\favicon.ico" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-1-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-1-original.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-2-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-2-original.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-3-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-3-original.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-4-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-4-original.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-5-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-5-original.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-6-116x116.jpg" />
+    <Content Include="BOS\site\images\bowling\gallery-bowling-6-original.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-1-370x325.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-2-370x325.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-3-370x325.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-4-370x279.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-5-370x279.jpg" />
+    <Content Include="BOS\site\images\bowling\home-post-6-370x279.jpg" />
+    <Content Include="BOS\site\images\bowling\logo-111x78.png" />
+    <Content Include="BOS\site\images\bowling\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\bowling\partners-1-121x33.png" />
+    <Content Include="BOS\site\images\bowling\partners-2-88x59.png" />
+    <Content Include="BOS\site\images\bowling\partners-3-97x31.png" />
+    <Content Include="BOS\site\images\bowling\partners-4-95x52.png" />
+    <Content Include="BOS\site\images\bowling\partners-5-102x53.png" />
+    <Content Include="BOS\site\images\bowling\player-1-152x144.jpg" />
+    <Content Include="BOS\site\images\bowling\player-2-152x144.jpg" />
+    <Content Include="BOS\site\images\bowling\shop\product-10-279x285.png" />
+    <Content Include="BOS\site\images\bowling\shop\product-10-original.jpg" />
+    <Content Include="BOS\site\images\bowling\shop\product-11-282x167.png" />
+    <Content Include="BOS\site\images\bowling\shop\product-11-original.jpg" />
+    <Content Include="BOS\site\images\bowling\slider-slide-1-1920x711.jpg" />
+    <Content Include="BOS\site\images\bowling\slider-slide-2-1920x711.jpg" />
+    <Content Include="BOS\site\images\bowling\team-bidwell-44x44.jpg" />
+    <Content Include="BOS\site\images\bowling\team-bohn-III-44x44.jpg" />
+    <Content Include="BOS\site\images\bowling\team-ebdon-44x44.jpg" />
+    <Content Include="BOS\site\images\bowling\team-lavery-44x44.jpg" />
+    <Content Include="BOS\site\images\bowling\team-marko-fu-44x44.jpg" />
+    <Content Include="BOS\site\images\bowling\team-sherman-44x44.jpg" />
+    <Content Include="BOS\site\images\dot-dark.svg" />
+    <Content Include="BOS\site\images\dot.svg" />
+    <Content Include="BOS\site\images\favicon.ico" />
+    <Content Include="BOS\site\images\favicon.png" />
+    <Content Include="BOS\site\images\football\Football16.gif" />
+    <Content Include="BOS\site\images\football\Football24.gif" />
+    <Content Include="BOS\site\images\football\Football32.gif" />
+    <Content Include="BOS\site\images\football\Football64.gif" />
+    <Content Include="BOS\site\images\footer-soccer-post-1-93x87.jpg" />
+    <Content Include="BOS\site\images\footer-soccer-post-2-93x87.jpg" />
+    <Content Include="BOS\site\images\footer-soccer-post-3-93x87.jpg" />
+    <Content Include="BOS\site\images\footer-soccer-post-4-93x87.jpg" />
+    <Content Include="BOS\site\images\gallery-image-1-1055x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-1-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-image-2-1199x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-2-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-image-3-1195x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-3-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-image-4-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-4-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-image-5-1199x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-5-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-image-6-1200x800-original.jpg" />
+    <Content Include="BOS\site\images\gallery-image-6-370x340.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-1-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-1-original.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-2-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-2-original.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-3-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-3-original.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-4-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-4-original.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-5-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-5-original.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-6-212x212.jpg" />
+    <Content Include="BOS\site\images\gallery-soccer-6-original.jpg" />
+    <Content Include="BOS\site\images\gmap_marker.png" />
+    <Content Include="BOS\site\images\gmap_marker_active.png" />
+    <Content Include="BOS\site\images\ie8-panel\warning_bar_0000_us.jpg" />
+    <Content Include="BOS\site\images\loading.gif" />
+    <Content Include="BOS\site\images\LOC\DRPepper.png" />
+    <Content Include="BOS\site\images\LOC\IWATG.Football.comWEB.png" />
+    <Content Include="BOS\site\images\LOC\ListOfChampions_Logo.png" />
+    <Content Include="BOS\site\images\logo-soccer-default-95x126.png" />
+    <Content Include="BOS\site\images\logo-team-1-237x312.png" />
+    <Content Include="BOS\site\images\logo-team-2-233x233.png" />
+    <Content Include="BOS\site\images\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\news-1-1-207x152.jpg" />
+    <Content Include="BOS\site\images\news-1-2-768x414.jpg" />
+    <Content Include="BOS\site\images\news-1-3-207x152.jpg" />
+    <Content Include="BOS\site\images\news-1-4-768x414.jpg" />
+    <Content Include="BOS\site\images\news-2-1-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-2-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-3-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-4-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-5-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-6-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-7-368x287.jpg" />
+    <Content Include="BOS\site\images\news-2-8-368x287.jpg" />
+    <Content Include="BOS\site\images\news-3-1-370x325.jpg" />
+    <Content Include="BOS\site\images\news-3-2-370x325.jpg" />
+    <Content Include="BOS\site\images\news-3-3-370x325.jpg" />
+    <Content Include="BOS\site\images\news-3-4-370x325.jpg" />
+    <Content Include="BOS\site\images\news-3-5-370x325.jpg" />
+    <Content Include="BOS\site\images\news-3-6-370x325.jpg" />
+    <Content Include="BOS\site\images\news-4-1-370x279.jpg" />
+    <Content Include="BOS\site\images\news-4-2-370x279.jpg" />
+    <Content Include="BOS\site\images\news-4-3-370x279.jpg" />
+    <Content Include="BOS\site\images\news-4-4-370x279.jpg" />
+    <Content Include="BOS\site\images\news-4-5-370x279.jpg" />
+    <Content Include="BOS\site\images\news-5-1-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-2-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-3-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-4-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-5-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-6-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-7-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-8-369x343.jpg" />
+    <Content Include="BOS\site\images\news-5-9-369x343.jpg" />
+    <Content Include="BOS\site\images\ossaalogoBlack_RedGradient600.png" />
+    <Content Include="BOS\site\images\partners-1-inverse-75x42.png" />
+    <Content Include="BOS\site\images\partners-2-88x45.png" />
+    <Content Include="BOS\site\images\partners-2-inverse-78x41.png" />
+    <Content Include="BOS\site\images\partners-2-inverse-88x45.png" />
+    <Content Include="BOS\site\images\partners-3-79x52.png" />
+    <Content Include="BOS\site\images\partners-3-inverse-65x44.png" />
+    <Content Include="BOS\site\images\partners-3-inverse-79x52.png" />
+    <Content Include="BOS\site\images\partners-4-79x52.png" />
+    <Content Include="BOS\site\images\partners-4-inverse-79x52.png" />
+    <Content Include="BOS\site\images\player-1-368x286.png" />
+    <Content Include="BOS\site\images\player-1-368x300.png" />
+    <Content Include="BOS\site\images\player-2-368x286.png" />
+    <Content Include="BOS\site\images\player-2-368x300.png" />
+    <Content Include="BOS\site\images\player-3-229x268.png" />
+    <Content Include="BOS\site\images\player-3-368x286.png" />
+    <Content Include="BOS\site\images\player-4-152x144.jpg" />
+    <Content Include="BOS\site\images\player-4-368x286.png" />
+    <Content Include="BOS\site\images\player-5-152x144.jpg" />
+    <Content Include="BOS\site\images\player-6-152x144.jpg" />
+    <Content Include="BOS\site\images\post-baseball-1-370x239.jpg" />
+    <Content Include="BOS\site\images\post-chelsea-1-371x264.jpg" />
+    <Content Include="BOS\site\images\post-corporate-1-768x414.jpg" />
+    <Content Include="BOS\site\images\post-gloria-1-769x429.jpg" />
+    <Content Include="BOS\site\images\post-slide-1-769x397.jpg" />
+    <Content Include="BOS\site\images\post-slide-2-769x397.jpg" />
+    <Content Include="BOS\site\images\post-slide-3-769x397.jpg" />
+    <Content Include="BOS\site\images\preloader.gif" />
+    <Content Include="BOS\site\images\preloader.png" />
+    <Content Include="BOS\site\images\product-Nike-Air-Zoom-Pegasus-67x30.png" />
+    <Content Include="BOS\site\images\product-Nike-Baseball-Hat-55x38.png" />
+    <Content Include="BOS\site\images\roster-player-1-368x286.png" />
+    <Content Include="BOS\site\images\roster-player-2-368x286.png" />
+    <Content Include="BOS\site\images\roster-player-3-368x286.png" />
+    <Content Include="BOS\site\images\roster-player-4-368x286.png" />
+    <Content Include="BOS\site\images\roster-player-5-368x286.png" />
+    <Content Include="BOS\site\images\rugby\blog-element-1-94x94.jpg" />
+    <Content Include="BOS\site\images\rugby\blog-element-2-94x94.jpg" />
+    <Content Include="BOS\site\images\rugby\blog-element-3-94x94.jpg" />
+    <Content Include="BOS\site\images\rugby\blog-element-4-94x94.jpg" />
+    <Content Include="BOS\site\images\rugby\blog-element-5-94x94.jpg" />
+    <Content Include="BOS\site\images\rugby\favicon.ico" />
+    <Content Include="BOS\site\images\rugby\footer-post-1-93x87.jpg" />
+    <Content Include="BOS\site\images\rugby\footer-post-2-93x87.jpg" />
+    <Content Include="BOS\site\images\rugby\footer-post-3-93x87.jpg" />
+    <Content Include="BOS\site\images\rugby\footer-post-4-93x87.jpg" />
+    <Content Include="BOS\site\images\rugby\logo-default-131x102.png" />
+    <Content Include="BOS\site\images\rugby\logo-inverse-158x116.png" />
+    <Content Include="BOS\site\images\rugby\megamenu-post-1-93x94.jpg" />
+    <Content Include="BOS\site\images\rugby\megamenu-post-2-93x94.jpg" />
+    <Content Include="BOS\site\images\rugby\megamenu-post-3-93x94.jpg" />
+    <Content Include="BOS\site\images\rugby\megamenu-post-4-93x94.jpg" />
+    <Content Include="BOS\site\images\rugby\news-2-1-368x287.jpg" />
+    <Content Include="BOS\site\images\rugby\news-2-2-368x287.jpg" />
+    <Content Include="BOS\site\images\rugby\news-2-3-368x287.jpg" />
+    <Content Include="BOS\site\images\rugby\news-2-4-368x287.jpg" />
+    <Content Include="BOS\site\images\rugby\news-3-1-368x325.jpg" />
+    <Content Include="BOS\site\images\rugby\news-3-2-368x325.jpg" />
+    <Content Include="BOS\site\images\rugby\news-5-1-369x343.jpg" />
+    <Content Include="BOS\site\images\rugby\news-5-2-369x343.jpg" />
+    <Content Include="BOS\site\images\rugby\news-5-3-369x343.jpg" />
+    <Content Include="BOS\site\images\rugby\news-5-4-369x343.jpg" />
+    <Content Include="BOS\site\images\rugby\partners-1-inverse-75x42.png" />
+    <Content Include="BOS\site\images\rugby\partners-2-inverse-78x41.png" />
+    <Content Include="BOS\site\images\rugby\partners-3-inverse-65x44.png" />
+    <Content Include="BOS\site\images\rugby\player-4-152x144.jpg" />
+    <Content Include="BOS\site\images\rugby\player-5-152x144.jpg" />
+    <Content Include="BOS\site\images\rugby\post-gloria-1-769x429.jpg" />
+    <Content Include="BOS\site\images\rugby\post-slide-1-769x397.jpg" />
+    <Content Include="BOS\site\images\rugby\post-slide-2-769x397.jpg" />
+    <Content Include="BOS\site\images\rugby\slider-slide-1-1920x670.jpg" />
+    <Content Include="BOS\site\images\rugby\slider-slide-2-1920x670.jpg" />
+    <Content Include="BOS\site\images\rugby\slider-slide-3-1920x670.jpg" />
+    <Content Include="BOS\site\images\rugby\team-athletic-38x34.png" />
+    <Content Include="BOS\site\images\rugby\team-athletic-69x62.png" />
+    <Content Include="BOS\site\images\rugby\team-diamondbacks-44x35.png" />
+    <Content Include="BOS\site\images\rugby\team-dragons-40x30.png" />
+    <Content Include="BOS\site\images\rugby\team-piranha-36x36.png" />
+    <Content Include="BOS\site\images\rugby\team-rogers-46x36.png" />
+    <Content Include="BOS\site\images\rugby\team-rogers-86x67.png" />
+    <Content Include="BOS\site\images\rugby\team-rugby-rogers-61x48.png" />
+    <Content Include="BOS\site\images\rugby\team-rugby-sport-53x42.png" />
+    <Content Include="BOS\site\images\rugby\team-white-sox-38x33.png" />
+    <Content Include="BOS\site\images\rugby\thumbnail-minimal-1-67x147.png" />
+    <Content Include="BOS\site\images\rugby\thumbnail-minimal-2-68x126.png" />
+    <Content Include="BOS\site\images\rugby\thumbnail-minimal-2-97x192.png" />
+    <Content Include="BOS\site\images\rugby\thumbnail-minimal-3-73x135.png" />
+    <Content Include="BOS\site\images\rugby\thumbnail-minimal-4-68x126.png" />
+    <Content Include="BOS\site\images\shop\product-1-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-1.png" />
+    <Content Include="BOS\site\images\shop\product-10-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-10-original.png" />
+    <Content Include="BOS\site\images\shop\product-10.png" />
+    <Content Include="BOS\site\images\shop\product-2-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-2.png" />
+    <Content Include="BOS\site\images\shop\product-3-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-3.png" />
+    <Content Include="BOS\site\images\shop\product-4-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-4.png" />
+    <Content Include="BOS\site\images\shop\product-5-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-5.png" />
+    <Content Include="BOS\site\images\shop\product-6-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-6.png" />
+    <Content Include="BOS\site\images\shop\product-7-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-8-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-9-original.jpg" />
+    <Content Include="BOS\site\images\shop\product-9.png" />
+    <Content Include="BOS\site\images\shop\product-cart-1.png" />
+    <Content Include="BOS\site\images\shop\product-cart-2.png" />
+    <Content Include="BOS\site\images\shop\product-single-1.png" />
+    <Content Include="BOS\site\images\shop\product-single-2.png" />
+    <Content Include="BOS\site\images\shop\product-single-3.png" />
+    <Content Include="BOS\site\images\shop\product-small-1.png" />
+    <Content Include="BOS\site\images\shop\product-small-2.png" />
+    <Content Include="BOS\site\images\shop\product-small-3.png" />
+    <Content Include="BOS\site\images\shop\product-small-4.png" />
+    <Content Include="BOS\site\images\shop\product-small-5.png" />
+    <Content Include="BOS\site\images\shop\product-small-6.png" />
+    <Content Include="BOS\site\images\shop\product-small-7.png" />
+    <Content Include="BOS\site\images\shop\product-small-8.png" />
+    <Content Include="BOS\site\images\shop\product-small-9.png" />
+    <Content Include="BOS\site\images\shop\thumb-1.jpg" />
+    <Content Include="BOS\site\images\shop\thumb-2.jpg" />
+    <Content Include="BOS\site\images\slider-1-slide-1-1920x671.jpg" />
+    <Content Include="BOS\site\images\slider-1-slide-2-1920x671.jpg" />
+    <Content Include="BOS\site\images\slider-1-slide-3-1920x671.jpg" />
+    <Content Include="BOS\site\images\sport-elements-1-357x321.jpg" />
+    <Content Include="BOS\site\images\sport-elements-323x171.jpg" />
+    <Content Include="BOS\site\images\team-athletic-33x30.png" />
+    <Content Include="BOS\site\images\team-barcelona-30x35.png" />
+    <Content Include="BOS\site\images\team-barcelona-45x55.png" />
+    <Content Include="BOS\site\images\team-barcelona-84x101.png" />
+    <Content Include="BOS\site\images\team-bavaria-fc-26x34.png" />
+    <Content Include="BOS\site\images\team-bavaria-fc-38x50.png" />
+    <Content Include="BOS\site\images\team-bavaria-fc-77x99.png" />
+    <Content Include="BOS\site\images\team-celta-vigo-100x100.png" />
+    <Content Include="BOS\site\images\team-celta-vigo-35x39.png" />
+    <Content Include="BOS\site\images\team-celta-vigo-37x34.png" />
+    <Content Include="BOS\site\images\team-celta-vigo-45x50.png" />
+    <Content Include="BOS\site\images\team-dream-team-34x34.png" />
+    <Content Include="BOS\site\images\team-dream-team-50x50.png" />
+    <Content Include="BOS\site\images\team-dream-team-69x69.png" />
+    <Content Include="BOS\site\images\team-dream-team-91x91.png" />
+    <Content Include="BOS\site\images\team-fenix-40x32.png" />
+    <Content Include="BOS\site\images\team-real-madrid-28x37.png" />
+    <Content Include="BOS\site\images\team-real-madrid-38x50.png" />
+    <Content Include="BOS\site\images\team-real-madrid-78x98.png" />
+    <Content Include="BOS\site\images\team-sportland-31x41.png" />
+    <Content Include="BOS\site\images\team-sportland-41x55.png" />
+    <Content Include="BOS\site\images\team-sportland-58x77.png" />
+    <Content Include="BOS\site\images\team-sportland-75x99.png" />
+    <Content Include="BOS\site\images\thumbnail-minimal-1-67x147.png" />
+    <Content Include="BOS\site\images\thumbnail-minimal-2-68x126.png" />
+    <Content Include="BOS\site\images\thumbnail-minimal-3-73x135.png" />
+    <Content Include="BOS\site\images\thumbnail-minimal-4-68x126.png" />
+    <Content Include="BOS\site\images\user-1-63x63.jpg" />
+    <Content Include="BOS\site\images\user-2-63x63.jpg" />
+    <Content Include="BOS\site\images\user-3-63x63.jpg" />
+    <Content Include="BOS\site\images\user-4-69x69.jpg" />
+    <Content Include="BOS\site\images\user-5-69x69.jpg" />
+    <Content Include="BOS\site\images\user-6-69x69.jpg" />
+    <Content Include="BOS\site\images\user-7-69x69.jpg" />
+    <Content Include="BOS\site\images\video-play.png" />
+    <Content Include="BOS\site\images\vimeo-play.png" />
+    <Content Include="BOS\site\images\youtube-play.png" />
+    <Content Include="BOS\site\images\_blank.png" />
+    <Content Include="BOS\site\index.html" />
+    <Content Include="BOS\site\js\core.min.js" />
+    <Content Include="BOS\site\js\script.js" />
+    <Content Include="BOS\site\latest-results-1.html" />
+    <Content Include="BOS\site\latest-results-2.html" />
+    <Content Include="BOS\site\list-shop.html" />
+    <Content Include="BOS\site\login-and-register.html" />
+    <Content Include="BOS\site\news-1.html" />
+    <Content Include="BOS\site\news-2.html" />
+    <Content Include="BOS\site\news-3.html" />
+    <Content Include="BOS\site\news-4.html" />
+    <Content Include="BOS\site\news-5.html" />
+    <Content Include="BOS\site\player-page.html" />
+    <Content Include="BOS\site\privacy-policy.html" />
+    <Content Include="BOS\site\product-page.html" />
+    <Content Include="BOS\site\roster.html" />
+    <Content Include="BOS\site\search-results.html" />
+    <Content Include="BOS\site\shop-elements.html" />
+    <Content Include="BOS\site\shopping-cart.html" />
+    <Content Include="BOS\site\shortcodes.html" />
+    <Content Include="BOS\site\sport-elements.html" />
+    <Content Include="BOS\site\standings.html" />
+    <Content Include="BOS\site\typography.html" />
+    <Content Include="Contacts.htm" />
+    <Content Include="AverageGolfScoresGirls.aspx" />
+    <Content Include="DefaultTest.aspx" />
+    <Content Include="ig_res\Windows7\ig_webtab.css" />
+    <Content Include="images\Athelitecareokc300.jpg" />
+    <Content Include="images\BasketballScoreboardBOYS.gif" />
+    <Content Include="images\BasketballScoreboardC.gif" />
+    <Content Include="images\BasketballScoreboardGIRLS.gif" />
+    <Content Include="images\BasketballScoreboardQ.gif" />
+    <Content Include="images\BasketballScoreboardS.gif" />
+    <Content Include="images\FB1.png" />
+    <Content Include="images\FB2.png" />
+    <Content Include="images\HeaderBasketball.png" />
+    <Content Include="images\OCOM300.png" />
+    <Content Include="images\OfficialsShirtWOStripe.JPG" />
+    <Content Include="images\OfficialsShirtWStripe.JPG" />
+    <Content Include="images\ossaalogoBlack.gif" />
+    <Content Include="images\ossaalogoBlackSmall.gif" />
+    <Content Include="images\ossaalogoBlackWithBasketballSmall.gif" />
+    <Content Include="images\Skordle300.png" />
+    <Content Include="images\sponsors\Ad_Army_250x250.jpg" />
+    <Content Include="images\sponsors\Ad_Army_400Banner.jpg" />
+    <Content Include="images\sponsors\Ad_Army_450Banner.jpg" />
+    <Content Include="images\sponsors\Ad_Army_500Banner.jpg" />
+    <Content Include="images\sponsors\Ad_Army_640Banner.jpg" />
+    <Content Include="images\sponsors\Ad_Army_728Banner.jpg" />
+    <Content Include="images\sponsors\Ad_Ford_250x250.jpg" />
+    <Content Include="images\sponsors\Ad_Skordle_250x250.png" />
+    <Content Include="images\sponsors\Athelitecareokc300.jpg" />
+    <Content Include="images\sponsors\Athelitecareokc300.png" />
+    <Content Include="images\sponsors\Athelitecareokc500.jpg" />
+    <Content Include="images\sponsors\OCOM300.png" />
+    <Content Include="images\sponsors\OCOM500.png" />
+    <Content Include="images\sponsors\OKOilAndNaturalGasBanner1_450.jpg" />
+    <Content Include="images\sponsors\OKOilAndNaturalGasBanner1_500.jpg" />
+    <Content Include="images\sponsors\OKOilAndNaturalGasSquare1.jpg" />
+    <Content Include="images\sponsors\OKOilAndNaturalGasSquare2.jpg" />
+    <Content Include="images\sponsors\OKOilAndNaturalGasSquare3.jpg" />
+    <Content Include="images\sponsors\Skordle.png" />
+    <Content Include="images\sponsors\Skordle300.png" />
+    <Content Include="images\sponsors\Skordle500.png" />
+    <Content Include="images\sponsors\Wilson.png" />
+    <Content Include="images\sponsors\WilsonBall.png" />
+    <Content Include="images\sponsors\WilsonBallWeb.png" />
+    <Content Include="images\StateBKScoreboard2017.gif" />
+    <Content Include="images\WH1.png" />
+    <Content Include="images\WH2.png" />
+    <Content Include="memad\entryform.css" />
+    <Content Include="memad\mem.css" />
+    <Content Include="memad\popup.css" />
+    <Content Include="memad\ucAssigners.ascx" />
+    <Content Include="membership\images\ossaalogoBlack_RedGradient.png" />
+    <Content Include="membership\images\ossaalogoBlack_RedGradientSmall.png" />
+    <Content Include="membership\SiteMembership.css" />
+    <Content Include="membership\styles\Site.css" />
+    <Content Include="mem\entryform.css" />
+    <Content Include="mem\EntryFormsEdit2.ascx" />
+    <Content Include="mem\EntryFormsEdit1.ascx" />
+    <Content Include="mem\EntryFormsList2.ascx" />
+    <Content Include="mem\EntryFormsList1.ascx" />
+    <Content Include="mem\EntryFormsLog.aspx" />
+    <Content Include="mem\MyTeamUpdateReview.aspx" />
+    <Content Include="mem\popup.css" />
+    <Content Include="mem\ucSwimResults.ascx" />
+    <Content Include="mem\ucTeamUpdateAll.ascx" />
+    <Content Include="mem\ucTeamUpdate.ascx" />
+    <Content Include="mem\pitchCountFall.aspx" />
+    <Content Include="mem\pitchCount.aspx" />
+    <Content Include="Officials\Assign\Home.aspx" />
+    <Content Include="Officials\EligibleOfficialsFootballPlayoffs.ascx" />
+    <Content Include="Officials\EligibleOfficialsPlayoffsSC.aspx" />
+    <Content Include="Officials\HeaderSoccer.png" />
+    <Content Include="Officials\images\Baseball.png" />
+    <Content Include="Officials\images\basketball.png" />
+    <Content Include="Officials\images\football.png" />
+    <Content Include="Officials\images\HeaderSoccer.png" />
+    <Content Include="Officials\images\OSSAAOfficials.png" />
+    <Content Include="Officials\images\Soccer.png" />
+    <Content Include="Officials\images\Softball.png" />
+    <Content Include="Officials\images\Track.png" />
+    <Content Include="Officials\images\Volleyball.png" />
+    <Content Include="Officials\images\Wrestling.png" />
+    <Content Include="Officials\Login1718.aspx" />
+    <Content Include="Officials\LoginSC.aspx" />
+    <Content Include="Officials\LoginSCPref.aspx" />
+    <Content Include="Officials\NOTES.txt" />
+    <Content Include="Officials\OfficialHome.aspx" />
+    <Content Include="Officials\PlayoffAvailabilitySC.aspx" />
+    <Content Include="Officials\LoginWRPref.aspx" />
+    <Content Include="Officials\EligibleOfficialsPlayoffsWR.aspx" />
+    <Content Include="Officials\PortalPoll_Jerseys.aspx" />
+    <Content Include="Officials\PortalPoll01_2019.aspx" />
+    <Content Include="Officials\PortalPoll03.aspx" />
+    <Content Include="Officials\Registration.html" />
+    <Content Include="Officials\Portal.html" />
+    <Content Include="Officials\PortalPoll02.aspx" />
+    <Content Include="Officials\PortalPoll01.aspx" />
+    <Content Include="Officials\Registration1.aspx" />
+    <Content Include="Officials\PortalInfo.aspx" />
+    <Content Include="Officials\PrefEditSC.ascx" />
+    <Content Include="Officials\PrefEntrySC.aspx" />
+    <Content Include="Officials\PrefInfoSC.ascx" />
+    <Content Include="Officials\PrefInfoWR.ascx" />
+    <Content Include="Officials\PrefEntryWR.aspx" />
+    <Content Include="Officials\PrefEditWR.ascx" />
+    <Content Include="Officials\images\FB1.png" />
+    <Content Include="Officials\images\FB2.png" />
+    <Content Include="Officials\images\gears.gif" />
+    <Content Include="Officials\images\HeaderBasketball.png" />
+    <Content Include="Officials\images\ossaalogoBlackWithBasketballSmall.gif" />
+    <Content Include="Officials\images\WH1.png" />
+    <Content Include="Officials\images\WH2.png" />
+    <Content Include="Officials\Portal.aspx" />
+    <Content Include="Officials\Registration1.html" />
+    <Content Include="Officials\RegistrationA.aspx" />
+    <Content Include="Officials\TestArbiter.aspx" />
+    <Content Include="rules\CompleteElig.aspx" />
+    <Content Include="rules\ELIGVerification.aspx" />
+    <Content Include="ScoreScroller.aspx" />
+    <Content Include="Scripts\scroller.js" />
+    <Content Include="Styles\scroller.css" />
+    <Content Include="Swim\Results.aspx" />
+    <Content Include="Track\Admin.aspx" />
+    <Content Include="ucSportsListRankings.ascx" />
+    <Content Include="images\black_bg.gif" />
+    <Content Include="images\blue_bg.gif" />
+    <Content Include="images\green_bg.gif" />
+    <Content Include="images\lightBlue1_bg.gif" />
+    <Content Include="images\lightBlue_bg.gif" />
+    <Content Include="images\red1_bg.gif" />
+    <Content Include="images\red_bg.gif" />
+    <Content Include="images\red_bg1.gif" />
+    <Content Include="m\sbSoccer.aspx" />
+    <Content Include="m\sbSlowPitch.aspx" />
+    <Content Include="m\sbBaseball.aspx" />
+    <Content Include="Officials\LoginBAOSheree.aspx" />
+    <Content Include="index.htm" />
+    <Content Include="ucSportsListSchedulesClass14.ascx" />
+    <Content Include="ucSportsListSchedulesClass15.ascx" />
+    <Content Include="ucSportsListSchedulesClass16.ascx" />
+    <Content Include="ucSportsListSchedulesClass19.ascx" />
+    <Content Include="ucSportsListSchedulesClass18.ascx" />
+    <Content Include="ucSportsListSchedulesClass17.ascx" />
+    <Content Include="ucViewHomePageTest.ascx" />
+    <Content Include="Utilities.aspx" />
+    <Content Include="_default.asp" />
+    <Content Include="Default.htm" />
+    <Content Include="FootballSchedules.aspx" />
+    <Content Include="index.html" />
+    <Content Include="jsm\gmaps.js" />
+    <Content Include="jsm\html5.js" />
+    <Content Include="jsm\init.js" />
+    <Content Include="jsm\jquery-1.10.2.min.js" />
+    <Content Include="jsm\jquery-migrate-1.2.1.min.js" />
+    <Content Include="jsm\jquery.flexslider.js" />
+    <Content Include="jsm\jquery.reveal.js" />
+    <Content Include="jsm\scrollspy.js" />
+    <Content Include="jsm\smoothscrolling.js" />
+    <Content Include="membership\images\ArrowRight1.gif" />
+    <Content Include="membership\images\Headerlogo.jpg" />
+    <Content Include="membership\images\HeaderlogoBKG.gif" />
+    <Content Include="membership\images\HeaderlogoBKG.jpg" />
+    <Content Include="membership\images\logoWebsiteWhite1.png" />
+    <Content Include="membership\images\next_hover.gif" />
+    <Content Include="membership\images\ossaalogoSmall.gif" />
+    <Content Include="membership\images\ossaalogoSmall64.gif" />
+    <Content Include="membership\images\ossaalogoSmall64AD.gif" />
+    <Content Include="membership\images\ossaalogoSmall64P.gif" />
+    <Content Include="membership\images\ossaalogoSmall64S.gif" />
+    <Content Include="membership\MemberChangePassword.aspx" />
+    <Content Include="membership\MemberChangeUsername.aspx" />
+    <Content Include="membership\MemberChangeUsername1.aspx" />
+    <Content Include="membership\MemberCoaches.aspx" />
+    <Content Include="membership\MemberForgotLogin.aspx" />
+    <Content Include="membership\MemberHelp.aspx" />
+    <Content Include="membership\MemberHome.aspx" />
+    <Content Include="membership\MemberInfoAD.aspx" />
+    <Content Include="membership\MemberInfoJH1.aspx" />
+    <Content Include="membership\MemberInfoJH2.aspx" />
+    <Content Include="membership\MemberInfoOSSAA.aspx" />
+    <Content Include="membership\MemberInfoPrin.aspx" />
+    <Content Include="membership\MemberInfoSchool.aspx" />
+    <Content Include="membership\MemberInfoSchoolP.aspx" />
+    <Content Include="membership\MemberInfoSup.aspx" />
+    <Content Include="membership\MemberLogin.aspx" />
+    <Content Include="membership\MemberParticipation.aspx" />
+    <Content Include="membership\MemberPlayoffPassSup.aspx" />
+    <Content Include="membership\MemberRules.aspx" />
+    <Content Include="membership\MemberVoting.aspx" />
+    <Content Include="membership\ucHomeADNew.ascx" />
+    <Content Include="membership\ucHomeOSSAAAdminNew.ascx" />
+    <Content Include="membership\ucHomePNew.ascx" />
+    <Content Include="membership\ucHomeSNew.ascx" />
+    <Content Include="membership\ucMenu.ascx" />
+    <Content Include="membership\ucMenuDDNew.ascx" />
+    <Content Include="mem\mScheduleAddBK.aspx" />
+    <Content Include="mem\mLogin.aspx" />
+    <Content Include="m\sbSwimmingState.aspx" />
+    <Content Include="m\sbWrestlingDual.aspx" />
+    <Content Include="m\sbBasketball.aspx" />
+    <Content Include="m\Landing.aspx" />
+    <Content Include="m\sbSwimmingRegionals.aspx" />
+    <Content Include="Officials\Assignors.aspx" />
+    <Content Include="Officials\Assignors.css" />
+    <Content Include="Officials\BBCoachEdit.ascx" />
+    <Content Include="Officials\BBCoachInfo.ascx" />
+    <Content Include="Officials\BBMainMenu.aspx" />
+    <Content Include="Officials\BBPrefs4A2A.aspx" />
+    <Content Include="Officials\BBPrefsAB.aspx" />
+    <Content Include="Officials\BBPrefsALL.aspx" />
+    <Content Include="Officials\BBRatingEntry.aspx" />
+    <Content Include="Officials\BKSchedule.aspx" />
+    <Content Include="Officials\blank.gif" />
+    <Content Include="Officials\downarrow.jpg" />
+    <Content Include="Officials\EligibleAvailableOfficialsBasketball.ascx" />
+    <Content Include="Officials\EligibleOfficials.aspx" />
+    <Content Include="Officials\EligibleOfficialsBaseball.ascx" />
+    <Content Include="Officials\EligibleOfficialsBasketball.ascx" />
+    <Content Include="Officials\EligibleOfficialsFootball.ascx" />
+    <Content Include="Officials\EligibleOfficialsPlayoffs.aspx" />
+    <Content Include="Officials\EligibleOfficialsPlayoffsWDates.aspx" />
+    <Content Include="Officials\FBAssignors.aspx" />
+    <Content Include="Officials\FBCoachEdit.ascx" />
+    <Content Include="Officials\FBCoachInfo.ascx" />
+    <Content Include="Officials\FBCrewTest.aspx" />
+    <Content Include="Officials\FBMainMenu.aspx" />
+    <Content Include="Officials\FBRatingEntry.aspx" />
+    <Content Include="Officials\FBSchedule.aspx" />
+    <Content Include="Officials\FBScratchList.aspx" />
+    <Content Include="Officials\HeaderBasketball.png" />
+    <Content Include="Officials\HeaderWrestling.png" />
+    <Content Include="Officials\LoginOfficials.aspx" />
+    <Content Include="Officials\LoginBAO.aspx" />
+    <Content Include="Officials\LoginBBO.aspx" />
+    <Content Include="Officials\LoginBBOSheree.aspx" />
+    <Content Include="Officials\LoginBBPref.aspx" />
+    <Content Include="Officials\LoginBBR.aspx" />
+    <Content Include="Officials\LoginFBR.aspx" />
+    <Content Include="Officials\LoginFBR2011.aspx" />
+    <Content Include="Officials\LoginFPO.aspx" />
+    <Content Include="Officials\LoginPlayoffE.aspx" />
+    <Content Include="Officials\LoginPlayoffEBA.aspx" />
+    <Content Include="Officials\LoginSPO.aspx" />
+    <Content Include="Officials\LoginVB.aspx" />
+    <Content Include="Officials\LoginWH.aspx" />
+    <Content Include="Officials\LoginWR.aspx" />
+    <Content Include="Officials\OfficialEdit.ascx" />
+    <Content Include="Officials\OfficialInfo.ascx" />
+    <Content Include="Officials\Officials.css" />
+    <Content Include="Officials\OfficialWeekGrid.ascx" />
+    <Content Include="Officials\OSSAAHomeOfficials.aspx" />
+    <Content Include="Officials\OSSAAOfficials.png" />
+    <Content Include="Officials\PlayoffAvailabilityBK.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityEmBK.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityFallBA.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityFB.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityFP.aspx" />
+    <Content Include="Officials\PlayoffAvailabilitySP.aspx" />
+    <Content Include="Officials\PlayoffAvailabilitySpringBA.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityVB.aspx" />
+    <Content Include="Officials\PlayoffAvailabilityWR.aspx" />
+    <Content Include="Officials\PrefEdit.ascx" />
+    <Content Include="Officials\PrefEdit4A3A.ascx" />
+    <Content Include="Officials\PrefEdit6A5A.ascx" />
+    <Content Include="Officials\PrefEdit6A5ANoAJAX.ascx" />
+    <Content Include="Officials\PrefEntry.aspx" />
+    <Content Include="Officials\PrefEntry4A3A.aspx" />
+    <Content Include="Officials\PrefEntry6A5A.aspx" />
+    <Content Include="Officials\PrefInfo.ascx" />
+    <Content Include="Officials\RatingsBK.aspx" />
+    <Content Include="Officials\RatingsBK.css" />
+    <Content Include="Officials\RatingsBK.js" />
+    <Content Include="Officials\ucFBScratchList.ascx" />
+    <Content Include="Officials\uparrow.jpg" />
+    <Content Include="Officials\WHMainMenu.aspx" />
+    <Content Include="Officials\WHReportEntry.aspx" />
+    <Content Include="rules\CompleteNew.aspx" />
+    <Content Include="rules\RulesVerificationNew.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="images\EnterRankingsEW.png" />
+    <Content Include="NOTES.txt" />
+    <Content Include="mem\ucMemberLoginLog.ascx" />
+    <Content Include="Test1.aspx" />
+    <Content Include="ucViewScheduleClass14.ascx" />
+    <Content Include="ucDistrictStandingsSoccerBoys.ascx" />
+    <Content Include="ucViewRankingAll58.ascx" />
+    <Content Include="ucViewRankingAll5.ascx" />
+    <Content Include="ucViewScheduleFBWeek4.ascx" />
+    <Content Include="ucViewScheduleFBWeek3.ascx" />
+    <Content Include="images\Iconschedule.png" />
+    <Content Include="images\IconWL.png" />
+    <Content Include="ucViewScheduleFBWeek2.ascx" />
+    <Content Include="ucViewScheduleFBWeek1.ascx" />
+    <Content Include="images\sponsors\adSponsor.gif" />
+    <Content Include="images\sponsors\areaSponsor.gif" />
+    <Content Include="images\sponsors\blank.gif" />
+    <Content Include="images\sponsors\coachesSponsor.gif" />
+    <Content Include="images\sponsors\districtSponsor.gif" />
+    <Content Include="images\sponsors\districtStandingsSponsor.gif" />
+    <Content Include="images\sponsors\fallSponsor.gif" />
+    <Content Include="images\sponsors\playoffSponsor.gif" />
+    <Content Include="images\sponsors\regionalSponsor.gif" />
+    <Content Include="images\sponsors\scoreboardSponsor.gif" />
+    <Content Include="images\sponsors\springSponsor.gif" />
+    <Content Include="images\sponsors\stateChampionshipSponsor.gif" />
+    <Content Include="images\sponsors\titleSponsor.gif" />
+    <Content Include="images\sponsors\winterSponsor.gif" />
+    <Content Include="images\TitleSmall.png" />
+    <Content Include="images\TribePrideBackSmall.jpg" />
+    <Content Include="images\TribePrideBackSmall.png" />
+    <Content Include="images\TribePrideBWBack.jpg" />
+    <Content Include="images\TribePrideBWFront.jpg" />
+    <Content Include="images\TribePrideFinalSmall.png" />
+    <Content Include="mem\LoginPass.aspx" />
+    <Content Include="ucViewScheduleVBState.ascx" />
+    <Content Include="ucViewScheduleFBBState.ascx" />
+    <Content Include="ucViewScheduleFPState.ascx" />
+    <Content Include="ucViewScheduleFBBRegionals.ascx" />
+    <Content Include="ucViewScheduleFPRegionals.ascx" />
+    <Content Include="images\ajax-loader1.gif" />
+    <Content Include="images\ajax-loader10.gif" />
+    <Content Include="images\ajax-loader11.gif" />
+    <Content Include="images\ajax-loader12.gif" />
+    <Content Include="images\ajax-loader13.gif" />
+    <Content Include="images\ajax-loader14.gif" />
+    <Content Include="images\ajax-loader16.gif" />
+    <Content Include="images\ajax-loader2.gif" />
+    <Content Include="images\ajax-loader3.gif" />
+    <Content Include="images\ajax-loader5.gif" />
+    <Content Include="images\ajax-loader6.gif" />
+    <Content Include="images\ajax-loading4.gif" />
+    <Content Include="ucViewScheduleFBBDistricts.ascx" />
+    <Content Include="ucViewScheduleFPDistricts.ascx" />
+    <Content Include="ucScheduleListSmallPublic.ascx" />
+    <Content Include="ucDistrictStandingsFastPitchLive.ascx" />
+    <Content Include="images\logoWebsiteWhite.jpg" />
+    <Content Include="images\logoWebsiteWhite.png" />
+    <Content Include="images\ossaalogoGray.gif" />
+    <Content Include="images\ossaalogoGray.png" />
+    <Content Include="images\ossaalogoGray1.gif" />
+    <Content Include="mem\LoginForgot.aspx" />
+    <Content Include="mem\LoginChange.aspx" />
+    <Content Include="mem\ucRankingsOthers.ascx" />
+    <Content Include="mem\ucRankingsOthersDetails.ascx" />
+    <Content Include="PrintClasses.aspx" />
+    <Content Include="ucViewScheduleClass.ascx" />
+    <Content Include="ucSportsListSchedulesClass.ascx" />
+    <Content Include="images\teampix\3861.gif" />
+    <Content Include="images\teampix\5692.JPG" />
+    <Content Include="mem\RankingsPrevious.aspx" />
+    <Content Include="mem\PrintScheduleSmall.aspx" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\indicator.gif" />
+    <Content Include="PrintRankings.aspx" />
+    <Content Include="mem\ucDistrictStandings1.ascx" />
+    <Content Include="mem\ucMyDistrict.ascx" />
+    <Content Include="mem\RankingsOthers.aspx" />
+    <Content Include="ucDistrictStandingsWrestlingDual.ascx" />
+    <Content Include="ucDistrictStandingsFastPitch.ascx" />
+    <Content Include="ucDistrictStandingsBaseball.ascx" />
+    <Content Include="ucDistrictStandingsSoccerGirls.ascx" />
+    <Content Include="DistrictStandingsFootball.aspx" />
+    <Content Include="memad\adHome.aspx" />
+    <Content Include="memad\adLogin.aspx" />
+    <Content Include="memad\ucCoachesSports.ascx" />
+    <Content Include="memad\ucCoaches.ascx" />
+    <Content Include="memad\ucCoachList.ascx" />
+    <Content Include="memad\ucPersonalInfoCoaches.ascx" />
+    <Content Include="memad\ucPersonalInfoAD.ascx" />
+    <Content Include="mem\Login.aspx" />
+    <Content Include="PrintRoster.aspx" />
+    <Content Include="ucDistrictStandingsFootball.ascx" />
+    <Content Include="ucDistrictStandingsNA.ascx" />
+    <Content Include="ucViewTeamRoster.ascx" />
+    <Content Include="mem\ucRosterAdd.ascx" />
+    <Content Include="mem\ucRosterList.ascx" />
+    <Content Include="mem\ucRoster.ascx" />
+    <Content Include="mem\ucScheduleListSmall.ascx" />
+    <Content Include="mem\Home.aspx" />
+    <Content Include="mem\ucSchedule.ascx" />
+    <Content Include="images\OSSAARankingsLogo.gif" />
+    <Content Include="mem\mem.css" />
+    <Content Include="mem\memSchedule.aspx" />
+    <Content Include="mem\ucContactUs.ascx" />
+    <Content Include="mem\ucFooter.ascx" />
+    <Content Include="mem\ucLogo.ascx" />
+    <Content Include="mem\ucPersonalInfo.ascx" />
+    <Content Include="mem\ucRankings.ascx" />
+    <Content Include="mem\ucRankingsSchedule.ascx" />
+    <Content Include="mem\ucScheduleAdd.ascx" />
+    <Content Include="mem\ucScheduleList.ascx" />
+    <Content Include="ucViewSchoolSchedule.ascx" />
+    <Content Include="PrintSchedule.aspx" />
+    <Content Include="ucSportsListSchools.ascx" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\gears.gif" />
+    <Content Include="images\igspl_CollapseRight.gif" />
+    <Content Include="images\igwdm_SubMenuIndicator.gif" />
+    <Content Include="images\igws_arrowRight.gif" />
+    <Content Include="images\ig_menutri.gif" />
+    <Content Include="images\ig_treeBlack_box.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="Rankings.css" />
+    <Content Include="ucViewSchoolHeader.ascx" />
+    <Content Include="ucViewSchoolMenu.ascx" />
+    <Content Include="ucViewTeamHeader.ascx" />
+    <Content Include="ucViewTeamSchedule.ascx" />
+    <Content Include="ucViewSchedule.ascx" />
+    <Content Include="ucSportsListDistricts.ascx" />
+    <Content Include="ucSportsListSchedules.ascx" />
+    <Content Include="ucViewRankingAll.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="membership\styles\SiteMembership.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="ucSportsList.ascx" />
+    <Content Include="ucViewHomePage.ascx" />
+    <Content Include="UnselfieSunday.aspx" />
+    <Content Include="utils\NewYearUtils.aspx" />
+    <Content Include="utils\OneTimeUtils.aspx" />
+    <Content Include="Warriors.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="xferscoreboard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adSports.aspx.designer.vb">
+      <DependentUpon>adSports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adSports.aspx.vb">
+      <DependentUpon>adSports.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\adPictures.aspx.designer.vb">
+      <DependentUpon>adPictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adPictures.aspx.vb">
+      <DependentUpon>adPictures.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\Contacts.aspx.designer.vb">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Contacts.aspx.vb">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DashboardMembership.aspx.designer.vb">
+      <DependentUpon>DashboardMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DashboardMembership.aspx.vb">
+      <DependentUpon>DashboardMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DashboardMembershipDetails.ascx.designer.vb">
+      <DependentUpon>DashboardMembershipDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DashboardMembershipDetails.ascx.vb">
+      <DependentUpon>DashboardMembershipDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DashboardOfficialsPages.aspx.designer.vb">
+      <DependentUpon>DashboardOfficialsPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DashboardOfficialsPages.aspx.vb">
+      <DependentUpon>DashboardOfficialsPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EWRankings.aspx.designer.vb">
+      <DependentUpon>EWRankings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EWRankings.aspx.vb">
+      <DependentUpon>EWRankings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\GolfScores.aspx.designer.vb">
+      <DependentUpon>GolfScores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\GolfScores.aspx.vb">
+      <DependentUpon>GolfScores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\MemberLoginLogs.aspx.designer.vb">
+      <DependentUpon>MemberLoginLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MemberLoginLogs.aspx.vb">
+      <DependentUpon>MemberLoginLogs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\NameSearch.aspx.designer.vb">
+      <DependentUpon>NameSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\NameSearch.aspx.vb">
+      <DependentUpon>NameSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\NewYear.aspx.designer.vb">
+      <DependentUpon>NewYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\NewYear.aspx.vb">
+      <DependentUpon>NewYear.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\OSSAAPassAdmin.aspx.designer.vb">
+      <DependentUpon>OSSAAPassAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\OSSAAPassAdmin.aspx.vb">
+      <DependentUpon>OSSAAPassAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\RankingsStatsWinter.aspx.designer.vb">
+      <DependentUpon>RankingsStatsWinter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\RankingsStatsWinter.aspx.vb">
+      <DependentUpon>RankingsStatsWinter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\sbSwimming.aspx.designer.vb">
+      <DependentUpon>sbSwimming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sbSwimming.aspx.vb">
+      <DependentUpon>sbSwimming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sendEmails.aspx.designer.vb">
+      <DependentUpon>sendEmails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sendEmails.aspx.vb">
+      <DependentUpon>sendEmails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\statsRankingsWinter.aspx.designer.vb">
+      <DependentUpon>statsRankingsWinter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\statsRankingsWinter.aspx.vb">
+      <DependentUpon>statsRankingsWinter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\stats.aspx.designer.vb">
+      <DependentUpon>stats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\stats.aspx.vb">
+      <DependentUpon>stats.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\statsLockout.aspx.designer.vb">
+      <DependentUpon>statsLockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\statsLockout.aspx.vb">
+      <DependentUpon>statsLockout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\statsRankingsFall.aspx.designer.vb">
+      <DependentUpon>statsRankingsFall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\statsRankingsFall.aspx.vb">
+      <DependentUpon>statsRankingsFall.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\unpw.aspx.designer.vb">
+      <DependentUpon>unpw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\unpw.aspx.vb">
+      <DependentUpon>unpw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\warnings.aspx.designer.vb">
+      <DependentUpon>warnings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\warnings.aspx.vb">
+      <DependentUpon>warnings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="apicall\TestCall.aspx.designer.vb">
+      <DependentUpon>TestCall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apicall\TestCall.aspx.vb">
+      <DependentUpon>TestCall.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AverageGolfScoresBoys.aspx.designer.vb">
+      <DependentUpon>AverageGolfScoresBoys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AverageGolfScoresBoys.aspx.vb">
+      <DependentUpon>AverageGolfScoresBoys.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BOS\clsBSData.vb" />
+    <Compile Include="BOS\clsMenusNew.vb" />
+    <Compile Include="BOS\clsPageObjects.vb" />
+    <Compile Include="BOS\ListOfChampions.aspx.vb">
+      <DependentUpon>ListOfChampions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOS\Schedule.aspx.designer.vb">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOS\Schedule.aspx.vb">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="clsDashboard.vb" />
+    <Compile Include="clsFunctions.vb" />
+    <Compile Include="clsGames.vb" />
+    <Compile Include="clsGoogleMaps.vb" />
+    <Compile Include="clsLinks.vb" />
+    <Compile Include="clsLog.vb" />
+    <Compile Include="clsMember.vb" />
+    <Compile Include="clsMembers.vb" />
+    <Compile Include="clsMembership.vb" />
+    <Compile Include="clsRankings.vb" />
+    <Compile Include="clsRedirect.vb" />
+    <Compile Include="clsRoster.vb" />
+    <Compile Include="clsRosters.vb" />
+    <Compile Include="clsSchedule.vb" />
+    <Compile Include="clsSchedules.vb" />
+    <Compile Include="clsSchool.vb" />
+    <Compile Include="clsSchools.vb" />
+    <Compile Include="clsSport.vb" />
+    <Compile Include="clsSports.vb" />
+    <Compile Include="clsTeam.vb" />
+    <Compile Include="clsTeams.vb" />
+    <Compile Include="clsWebBuilder.vb" />
+    <Compile Include="clsZipCodes.vb" />
+    <Compile Include="AverageGolfScoresGirls.aspx.designer.vb">
+      <DependentUpon>AverageGolfScoresGirls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AverageGolfScoresGirls.aspx.vb">
+      <DependentUpon>AverageGolfScoresGirls.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Connected Services\LOCData\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultTest.aspx.designer.vb">
+      <DependentUpon>DefaultTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultTest.aspx.vb">
+      <DependentUpon>DefaultTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucAssigners.ascx.designer.vb">
+      <DependentUpon>ucAssigners.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucAssigners.ascx.vb">
+      <DependentUpon>ucAssigners.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\EntryFormsEdit2.ascx.designer.vb">
+      <DependentUpon>EntryFormsEdit2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\EntryFormsEdit2.ascx.vb">
+      <DependentUpon>EntryFormsEdit2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\EntryFormsEdit1.ascx.designer.vb">
+      <DependentUpon>EntryFormsEdit1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\EntryFormsEdit1.ascx.vb">
+      <DependentUpon>EntryFormsEdit1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\EntryFormsList2.ascx.designer.vb">
+      <DependentUpon>EntryFormsList2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\EntryFormsList2.ascx.vb">
+      <DependentUpon>EntryFormsList2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\EntryFormsList1.ascx.designer.vb">
+      <DependentUpon>EntryFormsList1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\EntryFormsList1.ascx.vb">
+      <DependentUpon>EntryFormsList1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\EntryFormsLog.aspx.designer.vb">
+      <DependentUpon>EntryFormsLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\EntryFormsLog.aspx.vb">
+      <DependentUpon>EntryFormsLog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\MyTeamUpdateReview.aspx.designer.vb">
+      <DependentUpon>MyTeamUpdateReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\MyTeamUpdateReview.aspx.vb">
+      <DependentUpon>MyTeamUpdateReview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucSwimResults.ascx.designer.vb">
+      <DependentUpon>ucSwimResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucSwimResults.ascx.vb">
+      <DependentUpon>ucSwimResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucTeamUpdateAll.ascx.designer.vb">
+      <DependentUpon>ucTeamUpdateAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucTeamUpdateAll.ascx.vb">
+      <DependentUpon>ucTeamUpdateAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucTeamUpdate.ascx.designer.vb">
+      <DependentUpon>ucTeamUpdate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucTeamUpdate.ascx.vb">
+      <DependentUpon>ucTeamUpdate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\pitchCountFall.aspx.designer.vb">
+      <DependentUpon>pitchCountFall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\pitchCountFall.aspx.vb">
+      <DependentUpon>pitchCountFall.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\pitchCount.aspx.designer.vb">
+      <DependentUpon>pitchCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\pitchCount.aspx.vb">
+      <DependentUpon>pitchCount.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Assign\Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Assign\Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\clsAssign.vb" />
+    <Compile Include="Officials\clsRegistration.vb" />
+    <Compile Include="Officials\EligibleOfficialsFootballPlayoffs.ascx.designer.vb">
+      <DependentUpon>EligibleOfficialsFootballPlayoffs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsFootballPlayoffs.ascx.vb">
+      <DependentUpon>EligibleOfficialsFootballPlayoffs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsSC.aspx.designer.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsSC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsSC.aspx.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsSC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Login1718.aspx.designer.vb">
+      <DependentUpon>Login1718.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Login1718.aspx.vb">
+      <DependentUpon>Login1718.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginSC.aspx.designer.vb">
+      <DependentUpon>LoginSC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginSC.aspx.vb">
+      <DependentUpon>LoginSC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginSCPref.aspx.designer.vb">
+      <DependentUpon>LoginSCPref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginSCPref.aspx.vb">
+      <DependentUpon>LoginSCPref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\OfficialHome.aspx.designer.vb">
+      <DependentUpon>OfficialHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\OfficialHome.aspx.vb">
+      <DependentUpon>OfficialHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySC.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilitySC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySC.aspx.vb">
+      <DependentUpon>PlayoffAvailabilitySC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginWRPref.aspx.designer.vb">
+      <DependentUpon>LoginWRPref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginWRPref.aspx.vb">
+      <DependentUpon>LoginWRPref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsWR.aspx.designer.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsWR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsWR.aspx.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsWR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalPoll_Jerseys.aspx.designer.vb">
+      <DependentUpon>PortalPoll_Jerseys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalPoll_Jerseys.aspx.vb">
+      <DependentUpon>PortalPoll_Jerseys.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalPoll01_2019.aspx.designer.vb">
+      <DependentUpon>PortalPoll01_2019.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalPoll01_2019.aspx.vb">
+      <DependentUpon>PortalPoll01_2019.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalPoll03.aspx.designer.vb">
+      <DependentUpon>PortalPoll03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalPoll03.aspx.vb">
+      <DependentUpon>PortalPoll03.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalPoll02.aspx.designer.vb">
+      <DependentUpon>PortalPoll02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalPoll02.aspx.vb">
+      <DependentUpon>PortalPoll02.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalPoll01.aspx.designer.vb">
+      <DependentUpon>PortalPoll01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalPoll01.aspx.vb">
+      <DependentUpon>PortalPoll01.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Registration1.aspx.designer.vb">
+      <DependentUpon>Registration1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Registration1.aspx.vb">
+      <DependentUpon>Registration1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PortalInfo.aspx.designer.vb">
+      <DependentUpon>PortalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PortalInfo.aspx.vb">
+      <DependentUpon>PortalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEditSC.ascx.designer.vb">
+      <DependentUpon>PrefEditSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEditSC.ascx.vb">
+      <DependentUpon>PrefEditSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEntrySC.aspx.designer.vb">
+      <DependentUpon>PrefEntrySC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEntrySC.aspx.vb">
+      <DependentUpon>PrefEntrySC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefInfoSC.ascx.designer.vb">
+      <DependentUpon>PrefInfoSC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefInfoSC.ascx.vb">
+      <DependentUpon>PrefInfoSC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefInfoWR.ascx.designer.vb">
+      <DependentUpon>PrefInfoWR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefInfoWR.ascx.vb">
+      <DependentUpon>PrefInfoWR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEntryWR.aspx.designer.vb">
+      <DependentUpon>PrefEntryWR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEntryWR.aspx.vb">
+      <DependentUpon>PrefEntryWR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEditWR.ascx.designer.vb">
+      <DependentUpon>PrefEditWR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEditWR.ascx.vb">
+      <DependentUpon>PrefEditWR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Portal.aspx.designer.vb">
+      <DependentUpon>Portal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Portal.aspx.vb">
+      <DependentUpon>Portal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\RegistrationA.aspx.designer.vb">
+      <DependentUpon>RegistrationA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\RegistrationA.aspx.vb">
+      <DependentUpon>RegistrationA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\TestArbiter.aspx.designer.vb">
+      <DependentUpon>TestArbiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\TestArbiter.aspx.vb">
+      <DependentUpon>TestArbiter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Soccer.Master.designer.vb">
+      <DependentUpon>Soccer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Soccer.Master.vb">
+      <DependentUpon>Soccer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rules\CompleteElig.aspx.designer.vb">
+      <DependentUpon>CompleteElig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rules\CompleteElig.aspx.vb">
+      <DependentUpon>CompleteElig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rules\ELIGVerification.aspx.designer.vb">
+      <DependentUpon>ELIGVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rules\ELIGVerification.aspx.vb">
+      <DependentUpon>ELIGVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScoreScroller.aspx.designer.vb">
+      <DependentUpon>ScoreScroller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreScroller.aspx.vb">
+      <DependentUpon>ScoreScroller.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Swim\Results.aspx.designer.vb">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Swim\Results.aspx.vb">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Track\Admin.aspx.designer.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Track\Admin.aspx.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListRankings.ascx.designer.vb">
+      <DependentUpon>ucSportsListRankings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListRankings.ascx.vb">
+      <DependentUpon>ucSportsListRankings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FootballSchedules.aspx.designer.vb">
+      <DependentUpon>FootballSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FootballSchedules.aspx.vb">
+      <DependentUpon>FootballSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberChangePassword.aspx.designer.vb">
+      <DependentUpon>MemberChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberChangePassword.aspx.vb">
+      <DependentUpon>MemberChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberChangeUsername.aspx.designer.vb">
+      <DependentUpon>MemberChangeUsername.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberChangeUsername.aspx.vb">
+      <DependentUpon>MemberChangeUsername.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberChangeUsername1.aspx.designer.vb">
+      <DependentUpon>MemberChangeUsername1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberChangeUsername1.aspx.vb">
+      <DependentUpon>MemberChangeUsername1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberCoaches.aspx.designer.vb">
+      <DependentUpon>MemberCoaches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberCoaches.aspx.vb">
+      <DependentUpon>MemberCoaches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberForgotLogin.aspx.designer.vb">
+      <DependentUpon>MemberForgotLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberForgotLogin.aspx.vb">
+      <DependentUpon>MemberForgotLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberHelp.aspx.designer.vb">
+      <DependentUpon>MemberHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberHelp.aspx.vb">
+      <DependentUpon>MemberHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberHome.aspx.designer.vb">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberHome.aspx.vb">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoAD.aspx.designer.vb">
+      <DependentUpon>MemberInfoAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoAD.aspx.vb">
+      <DependentUpon>MemberInfoAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoJH1.aspx.designer.vb">
+      <DependentUpon>MemberInfoJH1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoJH1.aspx.vb">
+      <DependentUpon>MemberInfoJH1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoJH2.aspx.designer.vb">
+      <DependentUpon>MemberInfoJH2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoJH2.aspx.vb">
+      <DependentUpon>MemberInfoJH2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoOSSAA.aspx.designer.vb">
+      <DependentUpon>MemberInfoOSSAA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoOSSAA.aspx.vb">
+      <DependentUpon>MemberInfoOSSAA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoPrin.aspx.designer.vb">
+      <DependentUpon>MemberInfoPrin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoPrin.aspx.vb">
+      <DependentUpon>MemberInfoPrin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoSchool.aspx.designer.vb">
+      <DependentUpon>MemberInfoSchool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoSchool.aspx.vb">
+      <DependentUpon>MemberInfoSchool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoSchoolP.aspx.designer.vb">
+      <DependentUpon>MemberInfoSchoolP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoSchoolP.aspx.vb">
+      <DependentUpon>MemberInfoSchoolP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberInfoSup.aspx.designer.vb">
+      <DependentUpon>MemberInfoSup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberInfoSup.aspx.vb">
+      <DependentUpon>MemberInfoSup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberLogin.aspx.designer.vb">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberLogin.aspx.vb">
+      <DependentUpon>MemberLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberParticipation.aspx.designer.vb">
+      <DependentUpon>MemberParticipation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberParticipation.aspx.vb">
+      <DependentUpon>MemberParticipation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberPlayoffPassSup.aspx.designer.vb">
+      <DependentUpon>MemberPlayoffPassSup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberPlayoffPassSup.aspx.vb">
+      <DependentUpon>MemberPlayoffPassSup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberRules.aspx.designer.vb">
+      <DependentUpon>MemberRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberRules.aspx.vb">
+      <DependentUpon>MemberRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\MemberVoting.aspx.designer.vb">
+      <DependentUpon>MemberVoting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\MemberVoting.aspx.vb">
+      <DependentUpon>MemberVoting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteMembership.Master.designer.vb">
+      <DependentUpon>SiteMembership.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteMembership.Master.vb">
+      <DependentUpon>SiteMembership.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteAD.Master.designer.vb">
+      <DependentUpon>SiteAD.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteAD.Master.vb">
+      <DependentUpon>SiteAD.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteEmpty.Master.designer.vb">
+      <DependentUpon>SiteEmpty.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteEmpty.Master.vb">
+      <DependentUpon>SiteEmpty.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteLogin.Master.designer.vb">
+      <DependentUpon>SiteLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteLogin.Master.vb">
+      <DependentUpon>SiteLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteOSSAAAdmin.Master.designer.vb">
+      <DependentUpon>SiteOSSAAAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteOSSAAAdmin.Master.vb">
+      <DependentUpon>SiteOSSAAAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\SiteP.Master.designer.vb">
+      <DependentUpon>SiteP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="membership\SiteP.Master.vb">
+      <DependentUpon>SiteP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucHomeADNew.ascx.designer.vb">
+      <DependentUpon>ucHomeADNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucHomeADNew.ascx.vb">
+      <DependentUpon>ucHomeADNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucHomeOSSAAAdminNew.ascx.designer.vb">
+      <DependentUpon>ucHomeOSSAAAdminNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucHomeOSSAAAdminNew.ascx.vb">
+      <DependentUpon>ucHomeOSSAAAdminNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucHomePNew.ascx.designer.vb">
+      <DependentUpon>ucHomePNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucHomePNew.ascx.vb">
+      <DependentUpon>ucHomePNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucHomeSNew.ascx.designer.vb">
+      <DependentUpon>ucHomeSNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucHomeSNew.ascx.vb">
+      <DependentUpon>ucHomeSNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucMenu.ascx.designer.vb">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucMenu.ascx.vb">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership\ucMenuDDNew.ascx.designer.vb">
+      <DependentUpon>ucMenuDDNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="membership\ucMenuDDNew.ascx.vb">
+      <DependentUpon>ucMenuDDNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\mScheduleAddBK.aspx.designer.vb">
+      <DependentUpon>mScheduleAddBK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\mScheduleAddBK.aspx.vb">
+      <DependentUpon>mScheduleAddBK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\mLogin.aspx.designer.vb">
+      <DependentUpon>mLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\mLogin.aspx.vb">
+      <DependentUpon>mLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbSoccer.aspx.designer.vb">
+      <DependentUpon>sbSoccer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbSoccer.aspx.vb">
+      <DependentUpon>sbSoccer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbSlowPitch.aspx.designer.vb">
+      <DependentUpon>sbSlowPitch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbSlowPitch.aspx.vb">
+      <DependentUpon>sbSlowPitch.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbBaseball.aspx.designer.vb">
+      <DependentUpon>sbBaseball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbBaseball.aspx.vb">
+      <DependentUpon>sbBaseball.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbSwimmingState.aspx.designer.vb">
+      <DependentUpon>sbSwimmingState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbSwimmingState.aspx.vb">
+      <DependentUpon>sbSwimmingState.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbWrestlingDual.aspx.designer.vb">
+      <DependentUpon>sbWrestlingDual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbWrestlingDual.aspx.vb">
+      <DependentUpon>sbWrestlingDual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbBasketball.aspx.designer.vb">
+      <DependentUpon>sbBasketball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbBasketball.aspx.vb">
+      <DependentUpon>sbBasketball.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\Landing.aspx.designer.vb">
+      <DependentUpon>Landing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\Landing.aspx.vb">
+      <DependentUpon>Landing.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m\sbSwimmingRegionals.aspx.designer.vb">
+      <DependentUpon>sbSwimmingRegionals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\sbSwimmingRegionals.aspx.vb">
+      <DependentUpon>sbSwimmingRegionals.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Assignors.aspx.designer.vb">
+      <DependentUpon>Assignors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Assignors.aspx.vb">
+      <DependentUpon>Assignors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Basketball.Master.designer.vb">
+      <DependentUpon>Basketball.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Basketball.Master.vb">
+      <DependentUpon>Basketball.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBCoachEdit.ascx.designer.vb">
+      <DependentUpon>BBCoachEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBCoachEdit.ascx.vb">
+      <DependentUpon>BBCoachEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBCoachInfo.ascx.designer.vb">
+      <DependentUpon>BBCoachInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBCoachInfo.ascx.vb">
+      <DependentUpon>BBCoachInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBMainMenu.aspx.designer.vb">
+      <DependentUpon>BBMainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBMainMenu.aspx.vb">
+      <DependentUpon>BBMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBPrefs4A2A.aspx.designer.vb">
+      <DependentUpon>BBPrefs4A2A.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBPrefs4A2A.aspx.vb">
+      <DependentUpon>BBPrefs4A2A.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBPrefsAB.aspx.designer.vb">
+      <DependentUpon>BBPrefsAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBPrefsAB.aspx.vb">
+      <DependentUpon>BBPrefsAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBPrefsALL.aspx.designer.vb">
+      <DependentUpon>BBPrefsALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBPrefsALL.aspx.vb">
+      <DependentUpon>BBPrefsALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BBRatingEntry.aspx.designer.vb">
+      <DependentUpon>BBRatingEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BBRatingEntry.aspx.vb">
+      <DependentUpon>BBRatingEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\BKSchedule.aspx.designer.vb">
+      <DependentUpon>BKSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\BKSchedule.aspx.vb">
+      <DependentUpon>BKSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\clsOfficials.vb" />
+    <Compile Include="Officials\LoginBAOSheree.aspx.designer.vb">
+      <DependentUpon>LoginBAOSheree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBAOSheree.aspx.vb">
+      <DependentUpon>LoginBAOSheree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleAvailableOfficialsBasketball.ascx.designer.vb">
+      <DependentUpon>EligibleAvailableOfficialsBasketball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleAvailableOfficialsBasketball.ascx.vb">
+      <DependentUpon>EligibleAvailableOfficialsBasketball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficials.aspx.designer.vb">
+      <DependentUpon>EligibleOfficials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficials.aspx.vb">
+      <DependentUpon>EligibleOfficials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsBaseball.ascx.designer.vb">
+      <DependentUpon>EligibleOfficialsBaseball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsBaseball.ascx.vb">
+      <DependentUpon>EligibleOfficialsBaseball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsBasketball.ascx.designer.vb">
+      <DependentUpon>EligibleOfficialsBasketball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsBasketball.ascx.vb">
+      <DependentUpon>EligibleOfficialsBasketball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsFootball.ascx.designer.vb">
+      <DependentUpon>EligibleOfficialsFootball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsFootball.ascx.vb">
+      <DependentUpon>EligibleOfficialsFootball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffs.aspx.designer.vb">
+      <DependentUpon>EligibleOfficialsPlayoffs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffs.aspx.vb">
+      <DependentUpon>EligibleOfficialsPlayoffs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsWDates.aspx.designer.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsWDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\EligibleOfficialsPlayoffsWDates.aspx.vb">
+      <DependentUpon>EligibleOfficialsPlayoffsWDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBAssignors.aspx.designer.vb">
+      <DependentUpon>FBAssignors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBAssignors.aspx.vb">
+      <DependentUpon>FBAssignors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBCoachEdit.ascx.designer.vb">
+      <DependentUpon>FBCoachEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBCoachEdit.ascx.vb">
+      <DependentUpon>FBCoachEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBCoachInfo.ascx.designer.vb">
+      <DependentUpon>FBCoachInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBCoachInfo.ascx.vb">
+      <DependentUpon>FBCoachInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBCrewTest.aspx.designer.vb">
+      <DependentUpon>FBCrewTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBCrewTest.aspx.vb">
+      <DependentUpon>FBCrewTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBMainMenu.aspx.designer.vb">
+      <DependentUpon>FBMainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBMainMenu.aspx.vb">
+      <DependentUpon>FBMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBRatingEntry.aspx.designer.vb">
+      <DependentUpon>FBRatingEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBRatingEntry.aspx.vb">
+      <DependentUpon>FBRatingEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBSchedule.aspx.designer.vb">
+      <DependentUpon>FBSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBSchedule.aspx.vb">
+      <DependentUpon>FBSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\FBScratchList.aspx.designer.vb">
+      <DependentUpon>FBScratchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\FBScratchList.aspx.vb">
+      <DependentUpon>FBScratchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginOfficials.aspx.designer.vb">
+      <DependentUpon>LoginOfficials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginOfficials.aspx.vb">
+      <DependentUpon>LoginOfficials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginBAO.aspx.designer.vb">
+      <DependentUpon>LoginBAO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBAO.aspx.vb">
+      <DependentUpon>LoginBAO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginBBO.aspx.designer.vb">
+      <DependentUpon>LoginBBO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBBO.aspx.vb">
+      <DependentUpon>LoginBBO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginBBOSheree.aspx.designer.vb">
+      <DependentUpon>LoginBBOSheree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBBOSheree.aspx.vb">
+      <DependentUpon>LoginBBOSheree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginBBPref.aspx.designer.vb">
+      <DependentUpon>LoginBBPref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBBPref.aspx.vb">
+      <DependentUpon>LoginBBPref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginBBR.aspx.designer.vb">
+      <DependentUpon>LoginBBR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginBBR.aspx.vb">
+      <DependentUpon>LoginBBR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginFBR.aspx.designer.vb">
+      <DependentUpon>LoginFBR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginFBR.aspx.vb">
+      <DependentUpon>LoginFBR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginFBR2011.aspx.designer.vb">
+      <DependentUpon>LoginFBR2011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginFBR2011.aspx.vb">
+      <DependentUpon>LoginFBR2011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginFPO.aspx.designer.vb">
+      <DependentUpon>LoginFPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginFPO.aspx.vb">
+      <DependentUpon>LoginFPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginPlayoffE.aspx.designer.vb">
+      <DependentUpon>LoginPlayoffE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginPlayoffE.aspx.vb">
+      <DependentUpon>LoginPlayoffE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginPlayoffEBA.aspx.designer.vb">
+      <DependentUpon>LoginPlayoffEBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginPlayoffEBA.aspx.vb">
+      <DependentUpon>LoginPlayoffEBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginSPO.aspx.designer.vb">
+      <DependentUpon>LoginSPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginSPO.aspx.vb">
+      <DependentUpon>LoginSPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginVB.aspx.designer.vb">
+      <DependentUpon>LoginVB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginVB.aspx.vb">
+      <DependentUpon>LoginVB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginWH.aspx.designer.vb">
+      <DependentUpon>LoginWH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginWH.aspx.vb">
+      <DependentUpon>LoginWH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\LoginWR.aspx.designer.vb">
+      <DependentUpon>LoginWR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\LoginWR.aspx.vb">
+      <DependentUpon>LoginWR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\OfficialEdit.ascx.designer.vb">
+      <DependentUpon>OfficialEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\OfficialEdit.ascx.vb">
+      <DependentUpon>OfficialEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\OfficialInfo.ascx.designer.vb">
+      <DependentUpon>OfficialInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\OfficialInfo.ascx.vb">
+      <DependentUpon>OfficialInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Officials.Master.designer.vb">
+      <DependentUpon>Officials.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Officials.Master.vb">
+      <DependentUpon>Officials.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\OfficialWeekGrid.ascx.designer.vb">
+      <DependentUpon>OfficialWeekGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\OfficialWeekGrid.ascx.vb">
+      <DependentUpon>OfficialWeekGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\OSSAAHomeOfficials.aspx.designer.vb">
+      <DependentUpon>OSSAAHomeOfficials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\OSSAAHomeOfficials.aspx.vb">
+      <DependentUpon>OSSAAHomeOfficials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityBK.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityBK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityBK.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityBK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityEmBK.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityEmBK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityEmBK.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityEmBK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFallBA.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityFallBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFallBA.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityFallBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFB.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityFB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFB.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityFB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFP.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityFP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityFP.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityFP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySP.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilitySP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySP.aspx.vb">
+      <DependentUpon>PlayoffAvailabilitySP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySpringBA.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilitySpringBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilitySpringBA.aspx.vb">
+      <DependentUpon>PlayoffAvailabilitySpringBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityVB.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityVB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityVB.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityVB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityWR.aspx.designer.vb">
+      <DependentUpon>PlayoffAvailabilityWR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PlayoffAvailabilityWR.aspx.vb">
+      <DependentUpon>PlayoffAvailabilityWR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEdit.ascx.designer.vb">
+      <DependentUpon>PrefEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEdit.ascx.vb">
+      <DependentUpon>PrefEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEdit4A3A.ascx.designer.vb">
+      <DependentUpon>PrefEdit4A3A.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEdit4A3A.ascx.vb">
+      <DependentUpon>PrefEdit4A3A.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEdit6A5A.ascx.designer.vb">
+      <DependentUpon>PrefEdit6A5A.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEdit6A5A.ascx.vb">
+      <DependentUpon>PrefEdit6A5A.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEdit6A5ANoAJAX.ascx.designer.vb">
+      <DependentUpon>PrefEdit6A5ANoAJAX.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEdit6A5ANoAJAX.ascx.vb">
+      <DependentUpon>PrefEdit6A5ANoAJAX.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEntry.aspx.designer.vb">
+      <DependentUpon>PrefEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEntry.aspx.vb">
+      <DependentUpon>PrefEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEntry4A3A.aspx.designer.vb">
+      <DependentUpon>PrefEntry4A3A.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEntry4A3A.aspx.vb">
+      <DependentUpon>PrefEntry4A3A.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefEntry6A5A.aspx.designer.vb">
+      <DependentUpon>PrefEntry6A5A.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefEntry6A5A.aspx.vb">
+      <DependentUpon>PrefEntry6A5A.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\PrefInfo.ascx.designer.vb">
+      <DependentUpon>PrefInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\PrefInfo.ascx.vb">
+      <DependentUpon>PrefInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\RatingsBK.aspx.designer.vb">
+      <DependentUpon>RatingsBK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\RatingsBK.aspx.vb">
+      <DependentUpon>RatingsBK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\ucFBScratchList.ascx.designer.vb">
+      <DependentUpon>ucFBScratchList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\ucFBScratchList.ascx.vb">
+      <DependentUpon>ucFBScratchList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\WHMainMenu.aspx.designer.vb">
+      <DependentUpon>WHMainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\WHMainMenu.aspx.vb">
+      <DependentUpon>WHMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\WHReportEntry.aspx.designer.vb">
+      <DependentUpon>WHReportEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\WHReportEntry.aspx.vb">
+      <DependentUpon>WHReportEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Officials\Wrestling.Master.designer.vb">
+      <DependentUpon>Wrestling.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Officials\Wrestling.Master.vb">
+      <DependentUpon>Wrestling.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rules\CompleteNew.aspx.designer.vb">
+      <DependentUpon>CompleteNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rules\CompleteNew.aspx.vb">
+      <DependentUpon>CompleteNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rules\RulesVerificationNew.aspx.designer.vb">
+      <DependentUpon>RulesVerificationNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rules\RulesVerificationNew.aspx.vb">
+      <DependentUpon>RulesVerificationNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucMemberLoginLog.ascx.designer.vb">
+      <DependentUpon>ucMemberLoginLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucMemberLoginLog.ascx.vb">
+      <DependentUpon>ucMemberLoginLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test1.aspx.designer.vb">
+      <DependentUpon>Test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test1.aspx.vb">
+      <DependentUpon>Test1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass14.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass14.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass14.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass14.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass15.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass15.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass15.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass15.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass16.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass16.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass16.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass16.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass19.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass19.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass19.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass19.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass18.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass18.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass18.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass18.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass17.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass17.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass17.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass17.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewHomePageTest.ascx.designer.vb">
+      <DependentUpon>ucViewHomePageTest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewHomePageTest.ascx.vb">
+      <DependentUpon>ucViewHomePageTest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleClass14.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleClass14.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleClass14.ascx.vb">
+      <DependentUpon>ucViewScheduleClass14.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsSoccerBoys.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsSoccerBoys.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsSoccerBoys.ascx.vb">
+      <DependentUpon>ucDistrictStandingsSoccerBoys.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewRankingAll58.ascx.designer.vb">
+      <DependentUpon>ucViewRankingAll58.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewRankingAll58.ascx.vb">
+      <DependentUpon>ucViewRankingAll58.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewRankingAll5.ascx.designer.vb">
+      <DependentUpon>ucViewRankingAll5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewRankingAll5.ascx.vb">
+      <DependentUpon>ucViewRankingAll5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucScheduleAdd.ascx.designer.vb">
+      <DependentUpon>ucScheduleAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsList.ascx.designer.vb">
+      <DependentUpon>ucSportsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek4.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBWeek4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek4.ascx.vb">
+      <DependentUpon>ucViewScheduleFBWeek4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRankings.ascx.designer.vb">
+      <DependentUpon>ucRankings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek3.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBWeek3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek3.ascx.vb">
+      <DependentUpon>ucViewScheduleFBWeek3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek2.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBWeek2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek2.ascx.vb">
+      <DependentUpon>ucViewScheduleFBWeek2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek1.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBWeek1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBWeek1.ascx.vb">
+      <DependentUpon>ucViewScheduleFBWeek1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\LoginPass.aspx.designer.vb">
+      <DependentUpon>LoginPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\LoginPass.aspx.vb">
+      <DependentUpon>LoginPass.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleVBState.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleVBState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleVBState.ascx.vb">
+      <DependentUpon>ucViewScheduleVBState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBState.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBBState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBState.ascx.vb">
+      <DependentUpon>ucViewScheduleFBBState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFPState.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFPState.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFPState.ascx.vb">
+      <DependentUpon>ucViewScheduleFPState.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBRegionals.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBBRegionals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBRegionals.ascx.vb">
+      <DependentUpon>ucViewScheduleFBBRegionals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFPRegionals.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFPRegionals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFPRegionals.ascx.vb">
+      <DependentUpon>ucViewScheduleFPRegionals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBDistricts.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFBBDistricts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFBBDistricts.ascx.vb">
+      <DependentUpon>ucViewScheduleFBBDistricts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleClass.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleClass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFPDistricts.ascx.designer.vb">
+      <DependentUpon>ucViewScheduleFPDistricts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewScheduleFPDistricts.ascx.vb">
+      <DependentUpon>ucViewScheduleFPDistricts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucScheduleListSmallPublic.ascx.designer.vb">
+      <DependentUpon>ucScheduleListSmallPublic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucScheduleListSmallPublic.ascx.vb">
+      <DependentUpon>ucScheduleListSmallPublic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFastPitchLive.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsFastPitchLive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFastPitchLive.ascx.vb">
+      <DependentUpon>ucDistrictStandingsFastPitchLive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\LoginForgot.aspx.designer.vb">
+      <DependentUpon>LoginForgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\LoginForgot.aspx.vb">
+      <DependentUpon>LoginForgot.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\LoginChange.aspx.designer.vb">
+      <DependentUpon>LoginChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\LoginChange.aspx.vb">
+      <DependentUpon>LoginChange.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRankingsOthers.ascx.designer.vb">
+      <DependentUpon>ucRankingsOthers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRankingsOthers.ascx.vb">
+      <DependentUpon>ucRankingsOthers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRankingsOthersDetails.ascx.designer.vb">
+      <DependentUpon>ucRankingsOthersDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRankingsOthersDetails.ascx.vb">
+      <DependentUpon>ucRankingsOthersDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintClasses.aspx.designer.vb">
+      <DependentUpon>PrintClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintClasses.aspx.vb">
+      <DependentUpon>PrintClasses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucViewScheduleClass.ascx.vb">
+      <DependentUpon>ucViewScheduleClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedulesClass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedulesClass.ascx.vb">
+      <DependentUpon>ucSportsListSchedulesClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\RankingsPrevious.aspx.designer.vb">
+      <DependentUpon>RankingsPrevious.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\RankingsPrevious.aspx.vb">
+      <DependentUpon>RankingsPrevious.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\PrintScheduleSmall.aspx.designer.vb">
+      <DependentUpon>PrintScheduleSmall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\PrintScheduleSmall.aspx.vb">
+      <DependentUpon>PrintScheduleSmall.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrintRankings.aspx.designer.vb">
+      <DependentUpon>PrintRankings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRankings.aspx.vb">
+      <DependentUpon>PrintRankings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucDistrictStandings1.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandings1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucDistrictStandings1.ascx.vb">
+      <DependentUpon>ucDistrictStandings1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucMyDistrict.ascx.designer.vb">
+      <DependentUpon>ucMyDistrict.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucMyDistrict.ascx.vb">
+      <DependentUpon>ucMyDistrict.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\RankingsOthers.aspx.designer.vb">
+      <DependentUpon>RankingsOthers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\RankingsOthers.aspx.vb">
+      <DependentUpon>RankingsOthers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsWrestlingDual.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsWrestlingDual.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsWrestlingDual.ascx.vb">
+      <DependentUpon>ucDistrictStandingsWrestlingDual.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFastPitch.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsFastPitch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFastPitch.ascx.vb">
+      <DependentUpon>ucDistrictStandingsFastPitch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsBaseball.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsBaseball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsBaseball.ascx.vb">
+      <DependentUpon>ucDistrictStandingsBaseball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsSoccerGirls.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsSoccerGirls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsSoccerGirls.ascx.vb">
+      <DependentUpon>ucDistrictStandingsSoccerGirls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DistrictStandingsFootball.aspx.designer.vb">
+      <DependentUpon>DistrictStandingsFootball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DistrictStandingsFootball.aspx.vb">
+      <DependentUpon>DistrictStandingsFootball.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="memad\adHome.aspx.designer.vb">
+      <DependentUpon>adHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\adHome.aspx.vb">
+      <DependentUpon>adHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="memad\adLogin.aspx.designer.vb">
+      <DependentUpon>adLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\adLogin.aspx.vb">
+      <DependentUpon>adLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucCoachesSports.ascx.designer.vb">
+      <DependentUpon>ucCoachesSports.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucCoachesSports.ascx.vb">
+      <DependentUpon>ucCoachesSports.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucCoaches.ascx.designer.vb">
+      <DependentUpon>ucCoaches.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucCoaches.ascx.vb">
+      <DependentUpon>ucCoaches.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucCoachList.ascx.designer.vb">
+      <DependentUpon>ucCoachList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucCoachList.ascx.vb">
+      <DependentUpon>ucCoachList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucPersonalInfoCoaches.ascx.designer.vb">
+      <DependentUpon>ucPersonalInfoCoaches.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucPersonalInfoCoaches.ascx.vb">
+      <DependentUpon>ucPersonalInfoCoaches.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memad\ucPersonalInfoAD.ascx.designer.vb">
+      <DependentUpon>ucPersonalInfoAD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="memad\ucPersonalInfoAD.ascx.vb">
+      <DependentUpon>ucPersonalInfoAD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrintRoster.aspx.designer.vb">
+      <DependentUpon>PrintRoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRoster.aspx.vb">
+      <DependentUpon>PrintRoster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFootball.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsFootball.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsFootball.ascx.vb">
+      <DependentUpon>ucDistrictStandingsFootball.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucDistrictStandingsNA.ascx.designer.vb">
+      <DependentUpon>ucDistrictStandingsNA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucDistrictStandingsNA.ascx.vb">
+      <DependentUpon>ucDistrictStandingsNA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewSchedule.ascx.designer.vb">
+      <DependentUpon>ucViewSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewTeamRoster.ascx.designer.vb">
+      <DependentUpon>ucViewTeamRoster.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewTeamRoster.ascx.vb">
+      <DependentUpon>ucViewTeamRoster.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRosterAdd.ascx.designer.vb">
+      <DependentUpon>ucRosterAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRosterAdd.ascx.vb">
+      <DependentUpon>ucRosterAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRosterList.ascx.designer.vb">
+      <DependentUpon>ucRosterList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRosterList.ascx.vb">
+      <DependentUpon>ucRosterList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRoster.ascx.designer.vb">
+      <DependentUpon>ucRoster.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRoster.ascx.vb">
+      <DependentUpon>ucRoster.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucScheduleListSmall.ascx.designer.vb">
+      <DependentUpon>ucScheduleListSmall.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucScheduleListSmall.ascx.vb">
+      <DependentUpon>ucScheduleListSmall.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucSchedule.ascx.designer.vb">
+      <DependentUpon>ucSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucSchedule.ascx.vb">
+      <DependentUpon>ucSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\memSchedule.aspx.designer.vb">
+      <DependentUpon>memSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\memSchedule.aspx.vb">
+      <DependentUpon>memSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucContactUs.ascx.designer.vb">
+      <DependentUpon>ucContactUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucContactUs.ascx.vb">
+      <DependentUpon>ucContactUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucFooter.ascx.designer.vb">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucFooter.ascx.vb">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucLogo.ascx.designer.vb">
+      <DependentUpon>ucLogo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucLogo.ascx.vb">
+      <DependentUpon>ucLogo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucPersonalInfo.ascx.designer.vb">
+      <DependentUpon>ucPersonalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucPersonalInfo.ascx.vb">
+      <DependentUpon>ucPersonalInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRankings.ascx.vb">
+      <DependentUpon>ucRankings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucRankingsSchedule.ascx.designer.vb">
+      <DependentUpon>ucRankingsSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucRankingsSchedule.ascx.vb">
+      <DependentUpon>ucRankingsSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucScheduleAdd.ascx.vb">
+      <DependentUpon>ucScheduleAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mem\ucScheduleList.ascx.designer.vb">
+      <DependentUpon>ucScheduleList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mem\ucScheduleList.ascx.vb">
+      <DependentUpon>ucScheduleList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewSchoolSchedule.ascx.designer.vb">
+      <DependentUpon>ucViewSchoolSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewSchoolSchedule.ascx.vb">
+      <DependentUpon>ucViewSchoolSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintSchedule.aspx.designer.vb">
+      <DependentUpon>PrintSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSchedule.aspx.vb">
+      <DependentUpon>PrintSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchools.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchools.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchools.ascx.vb">
+      <DependentUpon>ucSportsListSchools.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewSchoolHeader.ascx.designer.vb">
+      <DependentUpon>ucViewSchoolHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewSchoolHeader.ascx.vb">
+      <DependentUpon>ucViewSchoolHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewSchoolMenu.ascx.designer.vb">
+      <DependentUpon>ucViewSchoolMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewSchoolMenu.ascx.vb">
+      <DependentUpon>ucViewSchoolMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewTeamHeader.ascx.designer.vb">
+      <DependentUpon>ucViewTeamHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewTeamHeader.ascx.vb">
+      <DependentUpon>ucViewTeamHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewTeamSchedule.ascx.designer.vb">
+      <DependentUpon>ucViewTeamSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewTeamSchedule.ascx.vb">
+      <DependentUpon>ucViewTeamSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewSchedule.ascx.vb">
+      <DependentUpon>ucViewSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListDistricts.ascx.designer.vb">
+      <DependentUpon>ucSportsListDistricts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListDistricts.ascx.vb">
+      <DependentUpon>ucSportsListDistricts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucSportsListSchedules.ascx.designer.vb">
+      <DependentUpon>ucSportsListSchedules.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucSportsListSchedules.ascx.vb">
+      <DependentUpon>ucSportsListSchedules.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewRankingAll.ascx.designer.vb">
+      <DependentUpon>ucViewRankingAll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewRankingAll.ascx.vb">
+      <DependentUpon>ucViewRankingAll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SQLHelper.vb" />
+    <Compile Include="ucSportsList.ascx.vb">
+      <DependentUpon>ucSportsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucViewHomePage.ascx.designer.vb">
+      <DependentUpon>ucViewHomePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucViewHomePage.ascx.vb">
+      <DependentUpon>ucViewHomePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clsEmail.vb" />
+    <Compile Include="UnselfieSunday.aspx.designer.vb">
+      <DependentUpon>UnselfieSunday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnselfieSunday.aspx.vb">
+      <DependentUpon>UnselfieSunday.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Utilities.aspx.designer.vb">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.aspx.vb">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="utils\NewYearUtils.aspx.designer.vb">
+      <DependentUpon>NewYearUtils.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\NewYearUtils.aspx.vb">
+      <DependentUpon>NewYearUtils.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="utils\OneTimeUtils.aspx.designer.vb">
+      <DependentUpon>OneTimeUtils.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\OneTimeUtils.aspx.vb">
+      <DependentUpon>OneTimeUtils.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Warriors.aspx.designer.vb">
+      <DependentUpon>Warriors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Warriors.aspx.vb">
+      <DependentUpon>Warriors.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="xferscoreboard.aspx.designer.vb">
+      <DependentUpon>xferscoreboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xferscoreboard.aspx.vb">
+      <DependentUpon>xferscoreboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\Instructions4A2A.pdf" />
+    <Content Include="docs\Instructions6A5A.pdf" />
+    <Content Include="docs\InstructionsAB.pdf" />
+    <None Include="Connected Services\LOCData\LOCData.wsdl" />
+    <None Include="docs\RankingsSubmissionsConfirmations.pdf" />
+    <Content Include="membership\SiteAD.Master" />
+    <Content Include="membership\SiteEmpty.Master" />
+    <Content Include="membership\SiteLogin.Master" />
+    <Content Include="membership\SiteMembership.Master" />
+    <Content Include="membership\SiteOSSAAAdmin.Master" />
+    <Content Include="membership\SiteP.Master" />
+    <Content Include="mail.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\143.95.71.185.pubxml" />
+    <None Include="My Project\PublishProfiles\143.95.75.162.pubxml" />
+    <None Include="My Project\PublishProfiles\65.38.21.34.pubxml" />
+    <None Include="My Project\PublishProfiles\Profile1.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Officials\Basketball.Master" />
+    <Content Include="Officials\Officials.Master" />
+    <None Include="Officials\Thumbs.db" />
+    <Content Include="Officials\Wrestling.Master" />
+    <Content Include="UrlRewriter.config" />
+    <Content Include="Officials\Soccer.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="App_LocalResources\" />
+    <Folder Include="bin\ar\" />
+    <Folder Include="bin\cs\" />
+    <Folder Include="bin\de\" />
+    <Folder Include="bin\es\" />
+    <Folder Include="bin\fr\" />
+    <Folder Include="bin\he\" />
+    <Folder Include="bin\hi\" />
+    <Folder Include="bin\it\" />
+    <Folder Include="bin\ja\" />
+    <Folder Include="bin\ko\" />
+    <Folder Include="bin\nl\" />
+    <Folder Include="bin\pt\" />
+    <Folder Include="bin\ru\" />
+    <Folder Include="bin\tr-TR\" />
+    <Folder Include="bin\zh-CHS\" />
+    <Folder Include="bin\zh-CHT\" />
+    <Folder Include="docs\Swimming\" />
+    <Folder Include="memm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\LOCData\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10918</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

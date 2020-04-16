@@ -1,0 +1,488 @@
+/**************************** VERTICAL (Default / No suffixes) *************************************************/
+.igdm_Office2007SilverControlVertical 
+{
+	background-color: white;
+	cursor: default;
+	float:left;
+	/*border: solid 1px;*/
+	white-space: nowrap; /* do not get text wrapped within the menu item*/
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	background-color: #D0D4DD;
+	border: 0px none;
+	overflow: hidden;
+}
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_Office2007SilverControlVerticalDisabled
+{
+	
+}
+
+/*
+ Main Control CSS class when it's active 
+*/
+.igdm_Office2007SilverControlVerticalActive
+{
+
+}
+
+/******************************** ROOT ELEMENTS ***************************************************/
+.igdm_Office2007SilverMenuGroupVerticalRoot
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: Transparent; /* makes the menu blocks mint green - a bg-color MUST be included for IE to work properly! */
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	/* position: relative; */ /* makes the menu blocks be positioned relative to their parent menu item                                       the lack of offset makes these appear normal, but it will make a difference                                       to the absolutely positioned child blocks */
+	color: #000; /* sets the default font colour to black */
+}
+
+.igdm_Office2007SilverMenuItemVerticalRoot
+{
+	font-size: 10px;
+	color: #000000;
+	padding: 6px;
+	padding-left: 12px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_Office2007SilverMenuItemVerticalIcon
+{
+	clear: none;
+	padding-right: 6px;
+	text-align: left;
+	vertical-align: middle;
+	border: 0px none;
+}
+
+ 
+.igdm_Office2007SilverMenuItemVerticalRootLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+.igdm_Office2007SilverMenuItemVerticalRootSelected
+{
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+.igdm_Office2007SilverMenuItemVerticalRootActive
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ffdf84;
+	border: 1px solid #FFBD69;
+}
+
+.igdm_Office2007SilverMenuItemVerticalRootHover
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ffdf84;
+	border: 1px solid Transparent;
+}
+
+.igdm_Office2007SilverMenuItemVerticalRootDisabled > a
+{
+	color: #8D8D8D;
+}
+
+/********************************** END ROOT ELEMENTS *********************************************/
+
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_Office2007SilverMenuGroupVertical
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #FDFAFF; 
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	border: 1px solid #7C7C94;
+	color:Black;
+}
+
+/**************************** END Menu Group Elemnts ********************************************/
+
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemVertical
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #000000; /* sets the default font colour to black */
+	background: Transparent none repeat scroll 0 0;
+	padding: 5px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_Office2007SilverMenuItemVerticalLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+.igdm_Office2007SilverMenuItemVertical.igdm_Office2007SilverMenuItemVerticalParent
+{
+	background-image: url(images/igwdm_SubMenuIndicator.gif);
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_Office2007SilverMenuItemVerticalParent
+{
+}
+
+.igdm_Office2007SilverMenuItemVerticalParentLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemVerticalSelected
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemVerticalActive
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemVerticalHover
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid Transparent;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemVerticalDisabled > a
+{
+	color: #8D8D8D;
+}
+
+/* List Item (LI) no inner content */
+.igdm_Office2007SilverMenuItemVerticalSeparator
+{
+	display: block;
+	height: 1px !important;
+	height: 1px;
+	width: 100%;
+	border: 0px none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #6D6E8F;
+	position: absolute;
+	clear: both;
+}
+
+/************************************************************************************************\
+|********************** Horizontal / Suffixed with "Horizontal" *********************************|
+\************************************************************************************************/
+.igdm_Office2007SilverControlHorizontal
+{
+	background-color: white;
+	cursor: default;
+	float:left;
+	/*border: solid 1px;*/
+	white-space: nowrap; /* do not get text wrapped within the menu item*/
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	background-color: #D0D4DD;
+	border: 0px none;
+	overflow: hidden;
+}
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_Office2007SilverControlHorizontalDisabled
+{
+
+}
+
+.igdm_Office2007SilverControlHorizontalActive
+{
+
+}
+
+/************** End Main Control Definitions ********************/
+
+/******************************** ROOT ELEMENTS - Group and Item ***************************************/
+/** Definitions for Root elements should be always before definitions of subElements **/
+.igdm_Office2007SilverMenuGroupHorizontalRoot
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #8aa; /* makes the menu blocks mint green - a bg-color MUST be included for IE to work properly! */
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	/* position: relative; */ /* makes the menu blocks be positioned relative to their parent menu item                                       the lack of offset makes these appear normal, but it will make a difference                                       to the absolutely positioned child blocks */
+	color: #000; /* sets the default font colour to black */
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRoot
+{
+	float: left; /* Required to implement horizontal orientation of menu */
+	font-size: 10px;
+	color: #fff;
+	padding: 6px;
+	padding-left: 12px;
+	border: 1px solid transparent;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalIcon
+{
+	clear: none;
+	padding-right: 6px;
+	text-align: left;
+	vertical-align: middle;
+	border: 0px none;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootSelected
+{
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootActive
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ffdf84;
+	border: 1px solid #FFBD69;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootHover
+{
+	background-image: url(images/igdm_RootHover.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ffdf84;
+	border: 1px solid Transparent;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootDisabled
+{
+	float: left; /* Required to implement horizontal orientation of menu */	
+}
+
+.igdm_Office2007SilverMenuItemHorizontalRootDisabled > a
+{
+	color: #8D8D8D;
+}
+
+/********************************** END ROOT ELEMENTS *********************************************/
+
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_Office2007SilverMenuGroupHorizontal
+{
+	/*border: 1px solid #000;*/ /* puts a black border around the menu blocks */
+	background-color: #FDFAFF; 
+	padding-left: 0px; /* stops the usual indent from ul */
+	cursor: default; /* gives an arrow cursor */
+	margin-left: 0px; /* Opera 7 final's margin and margin-box model cause problems */
+	list-style-type: none; /* removes the bullet points */
+	padding-top: 0px;
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	border: 1px solid #7C7C94;
+	color:Black;
+}
+
+/**************************** END Menu Group Elemnts ********************************************/
+
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemHorizontal
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	color: #000000; /* sets the default font colour to black */
+	background: Transparent none repeat scroll 0 0;
+	padding: 5px;
+	border: 1px solid transparent;
+	padding-right: 30px;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+.igdm_Office2007SilverMenuItemHorizontal.igdm_Office2007SilverMenuItemHorizontalParent
+{
+	/*background-image: url(images/igwdm_SubMenuIndicator.gif);*/
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_Office2007SilverMenuItemHorizontalParent
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	font-weight: normal;
+}
+
+.igdm_Office2007SilverMenuItemHorizontalParentLink
+{
+	display: block;
+	text-decoration: none;
+	font-family:Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;	
+	font-size: 12px;
+	cursor: default; 
+	color: #000000;
+}
+
+    /* Žb’èC³ ----------------------------------------- */
+    .igdm_Office2007SilverMenuItemHorizontalSelected.igdm_Office2007SilverMenuItemHorizontalParent
+    {
+	    /*background-image: url(images/igdm_ItemHoverParent.png);*/
+	    background-repeat: repeat-x;
+	    background-position: center right;
+	    /*background-color: #d5e684;*/
+	    border: 1px solid #7C7C94;
+    }
+
+    /* Žb’èC³ ----------------------------------------- */
+    .igdm_Office2007SilverMenuItemHorizontalActive.igdm_Office2007SilverMenuItemHorizontalParent
+    {
+	    /*background-image: url(images/igdm_ItemHoverParent.png);*/
+	    background-repeat: repeat-x;
+	    background-position: center right;
+	    /*background-color: #d5e684;*/
+	    border: 1px solid #7C7C94;
+    }
+
+    /* Žb’èC³ ----------------------------------------- */
+    .igdm_Office2007SilverMenuItemHorizontalHover.igdm_Office2007SilverMenuItemHorizontalParent
+    {
+	    background-repeat: repeat-x;
+	    background-position:  center top;
+
+	    font-weight: normal;
+	    border: 1px solid Transparent
+    }
+
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemHorizontalSelected
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemHorizontalActive
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid #FFBD69;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemHorizontalHover
+{
+	margin: 0px; /* Opera 7 puts large spacings between li elements */
+	background-color: #FFE7A2;
+	border: 1px solid Transparent;
+}
+
+/* List Item (Li) */
+.igdm_Office2007SilverMenuItemHorizontalDisabled > a
+{
+	color: #8D8D8D;
+}
+
+/* List Item (LI) no inner content */
+.igdm_Office2007SilverMenuItemHorizontalSeparator
+{
+
+	display: block;
+	width: 1px !important;
+	width: 1px;
+	height: 100%;
+	border: 0px none;
+	padding: 0px;
+	margin: 0px auto;
+	background-color: #6D6E8F;
+}
+
+/* Scrolling container - DIV */
+.igdm_Office2007SilverMenuScrollContainerHorizontal
+{
+}
+
+/* Left scrolling element for root level items Horizontal orientation - DIV */
+.igdm_Office2007SilverMenuScrollerRootLeft
+{
+}
+
+/* Right scrolling element for root level items Horizontal orientation - DIV */
+.igdm_Office2007SilverMenuScrollerRootRight
+{
+}
+
+/* Left scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_Office2007SilverMenuScrollerLeft
+{
+}
+
+/* Right scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_Office2007SilverMenuScrollerRight
+{
+}

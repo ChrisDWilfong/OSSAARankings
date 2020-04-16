@@ -1,0 +1,117 @@
+﻿.labelHeaderMain
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 26pt;
+    background-color: Maroon;
+    color: White;
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+.labelHeaderMainMOBI
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 26pt;
+    background-color: Maroon;
+    color: White;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    padding-top: 3px;
+}
+.labelHeader
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 16pt;
+    background-color: Gray;
+    color: White;
+    font-weight: bold;
+    height: 32px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.labelHeaderMOBI
+{
+    font-family: 'Arial';
+    font-size: 16pt;
+    background-color: Gray;
+    color: White;
+    font-weight: bold;
+    height: 32px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.linkHeader
+{
+    font-family: 'Verdana';
+    font-size: 16pt;
+    background-color: White;
+    color: Blue;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.linkHeaderMOBI
+{
+    font-family: 'Verdana';
+    font-size: 16pt;
+    background-color: White;
+    color: Blue;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    vertical-align: text-bottom;
+    padding-top: 2px;
+}
+.labelState
+{
+    font-family: 'Arial';
+    font-size: 16pt;
+}
+.labelState16
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 16pt;
+}
+.labelSemi
+{
+    font-family: 'Arial';
+    font-size: 14pt;
+}
+.labelSemi16
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 16pt;
+}
+.labelSemi1
+{
+    font-family: 'Verdana';
+    font-size: 14pt;
+}
+.labelSemiMOBI
+{
+    font-family: 'Verdana';
+    font-size: 14pt;
+}
+.labelQtr
+{
+    font-family: 'Arial';
+    font-size: 14pt;
+}
+.labelQtr16
+{
+    font-family: Helvetica, Segoe UI, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif;
+    font-size: 16pt;
+}
+.tabBasketball
+{
+    font-family: 'Century Gothic';
+    font-size: 8pt;
+}
+

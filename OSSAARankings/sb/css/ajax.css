@@ -1,0 +1,156 @@
+﻿.sbTableWidth
+{
+    width: 640px;
+    height: 275px;
+}
+.sbTableWidth
+{
+    width: 640px;
+    height: 325px;
+}
+.sbWebTabWidth
+{
+    width: 640px;
+    height: 250px;
+}
+.sbWebTabWidth1
+{
+    width: 640px;
+    height: 300px;
+}
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #000000;
+    font-family: Century Gothic;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.accordionHeader1
+{
+    border: 1px solid #2F4F4F;
+    color: Yellow;
+    background-color: #000000;
+    font-family: Arial, Sans-Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#master_content .accordionHeader a
+{
+      color: #FFFFFF;
+      background: none;
+      text-decoration: none;
+      font-family: Century Gothic;
+      font-size: 8pt;      
+}
+ 
+#master_content .accordionHeader a:hover
+{
+      background: none;
+      text-decoration: underline;
+      font-family: Century Gothic;
+      font-size: 8pt;      
+}
+ 
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+      font-family: Arial, Sans-Serif;
+      font-size: 12px;
+      font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+ 
+#master_content .accordionHeaderSelected a
+{
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 11px;
+}
+ 
+#master_content .accordionHeaderSelected a:hover
+{
+      background: none;
+      text-decoration: underline;
+      font-family: Verdana;
+      font-size: 11px;
+}
+ 
+.accordionContent
+{
+    background-color: #C0C0C0;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+.accordionWidth
+{
+    width: 375px;
+    height: 1200px;  
+}
+.sportImageWidth 
+{
+    width: 20px;
+    height: 20px;
+}
+.Wrestlingstyle1
+{
+    width: 30%;
+    font-family: Arial;
+    font-size: 11pt;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.GolfStyle1
+{
+    width: 47%;
+    font-family: Arial;
+    font-size: 11pt;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.TennisStyle1
+{
+    width: 24%;
+    font-family: Arial;
+    font-size: 11pt;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.TrackStyle1
+{
+    width: 24%;
+    font-family: Arial;
+    font-size: 11pt;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.SpringStyle1
+{
+    width: 100%;
+    font-family: Arial;
+    font-size: 9pt;
+    height: 24px;
+    font-weight: bold;
+    text-align: center;
+}

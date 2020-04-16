@@ -1,0 +1,701 @@
+/**************************** VERTICAL (Default / No suffixes) *************************************************/
+.igdm_LucidDreamControlVertical
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_controlbackground.png);
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	border-style:none;
+	border-width:0px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor:default;
+}
+
+
+/*
+ Main Control CSS class when it's active 
+*/
+.igdm_LucidDreamControlVerticalActive
+{
+}
+
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_LucidDreamControlVerticalDisabled
+{
+}
+
+
+/******************************** ROOT ELEMENTS ***************************************************/
+.igdm_LucidDreamMenuGroupVerticalRoot
+{
+	background-color:Transparent;
+	margin:0px;
+	padding-top:0px;
+	padding-left:0px;
+	list-style-type: none;
+	cursor:default;
+	color:Black;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRoot
+{
+	font-size:10px;
+	border:solid 1px Transparent;
+	padding:6px 30px 6px 12px;
+	color:#333333;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalIcon
+{
+	border-style:none;
+	border-width:0px;
+	padding-right:6px;
+	clear: none;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#333333;
+	text-decoration:none;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootSelected
+{
+	background-color:#9AD0F4;
+	border:solid 1px #6691B8;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootActive
+{
+	background-color:#6EB6E5;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_roothover.png);
+	border:solid 1px #6691B8;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootHover
+{
+	background-color:#6EB6E5;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_roothover.png);
+	border:solid 1px Transparent;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootDisabled
+{
+}
+
+
+/********************************** END ROOT ELEMENTS *********************************************/
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_LucidDreamMenuGroupVertical
+{
+	background-color:White;
+	border:solid 1px #CCCCCC;
+	margin:0px;
+	padding-top:0px;
+	padding-left:0px;
+	list-style-type: none;
+	cursor:default;
+	color:Black;
+}
+
+
+/**************************** END Menu Group Elemnts ********************************************/
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemVertical
+{
+	background-attachment:scroll;
+	background-color: #FFFFFF none repeat scroll 0 0;
+	background-repeat:repeat;
+	background-position:notset notset ;
+	border:solid 1px Transparent;
+	margin:0px;
+	padding:5px 30px 5px 5px;
+	color:#000333;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#000333;
+	text-decoration:none;
+}
+
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_LucidDreamMenuItemVerticalParent
+{
+}
+
+
+.igdm_LucidDreamMenuItemVerticalParentLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#000333;
+	text-decoration:none;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemVerticalSelected
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+	margin:0px;
+	color:White;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemVerticalActive
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+	margin:0px;
+	color:White;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemVerticalHover
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px Transparent;
+	margin:0px;
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalDisabled
+{
+}
+
+
+/* List Item (LI) no inner content */
+.igdm_LucidDreamMenuItemVerticalSeparator
+{
+	background-color:#CCCCCC;
+	border-style:none;
+	border-width:0px;
+	margin-top:0px;
+	padding:0px;
+	display: block;
+	height: 1px !important;
+	height: 1px;
+	width: 100%;
+	margin: 0px auto;
+	position: absolute;
+	clear: both;
+}
+
+
+.igdm_LucidDreamMenuScrollContainerVertical
+{
+}
+
+
+.igdm_LucidDreamMenuScrollerRootTop
+{
+}
+
+
+.igdm_LucidDreamMenuScrollerRootBottom
+{
+}
+
+
+.igdm_LucidDreamMenuScrollerTop
+{
+}
+
+
+.igdm_LucidDreamMenuScrollerBottom
+{
+}
+
+
+/************************************************************************************************\
+
+********************** Horizontal / Suffixed with "Horizontal" *********************************
+
+\************************************************************************************************/
+.igdm_LucidDreamControlHorizontal
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_controlbackground.png);
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	border-style:none;
+	border-width:0px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor:default;
+}
+
+
+.igdm_LucidDreamControlHorizontalActive
+{
+}
+
+
+/*
+ Main Control CSS class when it's disabled
+*/
+.igdm_LucidDreamControlHorizontalDisabled
+{
+}
+
+
+/************** End Main Control Definitions ********************/
+/******************************** ROOT ELEMENTS - Group and Item ***************************************/
+/** Definitions for Root elements should be always before definitions of subElements **/
+.igdm_LucidDreamMenuGroupHorizontalRoot
+{
+	background-color:White;
+	margin:0px;
+	padding-top:0px;
+	padding-left:0px;
+	list-style-type: none;
+	cursor:default;
+	color:Black;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRoot
+{
+	font-size:10px;
+	border:solid 1px Transparent;
+	padding:6px 6px 6px 12px;
+	float: left;
+	color:#000FFF;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalIcon
+{
+	border-style:none;
+	border-width:0px;
+	padding-right:6px;
+	clear: none;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#333333;
+	text-decoration:none;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootSelected
+{
+	background-color:#9AD0F4;
+	border:solid 1px #6691B8;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootActive
+{
+	background-color:#6EB6E5;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_roothover.png);
+	border:solid 1px #6691B8;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootHover
+{
+	background-color:#6EB6E5;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_roothover.png);
+	border:solid 1px Transparent;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootDisabled
+{
+	float: left;
+}
+
+
+/********************************** END ROOT ELEMENTS *********************************************/
+/****************************** MenuGroup (UL) ELEMENTS (SubMenu) *********************************/
+/* UL (List) */
+.igdm_LucidDreamMenuGroupHorizontal
+{
+	background-color:White;
+	border:solid 1px #CCCCCC;
+	margin:0px;
+	padding-top:0px;
+	padding-left:0px;
+	list-style-type: none;
+	cursor:default;
+	color:Black;
+}
+
+
+/**************************** END Menu Group Elemnts ********************************************/
+/************ MenuItem elements (single menu item - LI (base element) has > a > span) ***********/
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemHorizontal
+{
+	background-attachment:scroll;
+	background-color: #FFFFFF none repeat scroll 0 0;
+	background-repeat:repeat;
+	background-position:notset notset ;
+	border:solid 1px Transparent;
+	margin:0px;
+	padding:5px 30px 5px 5px;
+	color:#000333;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#000333;
+	text-decoration:none;
+}
+
+
+/* List Item (Li) that is a parent of a menu which will appear on the bottom */
+.igdm_LucidDreamMenuItemHorizontalParent
+{
+	font-weight:normal;
+	margin:0px;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalParentLink
+{
+	font-size:12px;
+	font-family: Verdana,Arial,Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica,Sans-serif;
+	display: block;
+	cursor:default;
+	color:#000333;
+	text-decoration:none;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemHorizontalSelected
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+	margin:0px;
+	color:White;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemHorizontalActive
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+	margin:0px;
+	color:White;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemHorizontalHover
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/igdm_itemhover.png);
+	font-weight:normal;
+	border:solid 1px Transparent;
+	margin:0px;
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalDisabled
+{
+}
+
+
+/* List Item (LI) no inner content */
+.igdm_LucidDreamMenuItemHorizontalSeparator
+{
+	background-color:#CCCCCC;
+	border-style:none;
+	border-width:0px;
+	margin-top:0px;
+	padding:0px;
+	display: block;
+	width: 1px !important;
+	width: 1px;
+	height: 100%;
+	margin: 0px auto;
+}
+
+
+/* Scrolling container - DIV */
+.igdm_LucidDreamMenuScrollContainerHorizontal
+{
+}
+
+
+/* Left scrolling element for root level items Horizontal orientation - DIV */
+.igdm_LucidDreamMenuScrollerRootLeft
+{
+}
+
+
+/* Right scrolling element for root level items Horizontal orientation - DIV */
+.igdm_LucidDreamMenuScrollerRootRight
+{
+}
+
+
+/* Left scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_LucidDreamMenuScrollerLeft
+{
+}
+
+
+/* Right scrolling element for non-root level items Horizontal orientation - DIV */
+.igdm_LucidDreamMenuScrollerRight
+{
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootSelected > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootHover > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalSelected > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalActive.igdm_LucidDreamMenuItemHorizontalParent
+{
+	background-repeat:repeat-x;
+	background-position:center right ;
+	font-weight:normal;
+	border:solid 1px #666666;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalActive > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalSelected.igdm_LucidDreamMenuItemHorizontalParent
+{
+	background-repeat:repeat-x;
+	background-position:center right ;
+	font-weight:normal;
+	border:solid 1px #666666;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalSelected.igdm_LucidDreamMenuItemVerticalParent
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:center right ;
+	background-image: url(images/igdm_itemhoverparent.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontal.igdm_LucidDreamMenuItemHorizontalParent
+{
+	background-repeat:no-repeat;
+	background-position:center right ;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootActive > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalHover.igdm_LucidDreamMenuItemVerticalParent
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:center right ;
+	background-image: url(images/igdm_itemhoverparent.png);
+	font-weight:normal;
+	border:solid 1px Transparent;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalActive > a
+{
+	color:White;
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemHorizontalDisabled > a
+{
+	color:#CCCCCC;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootHover > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalSelected > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootDisabled > a
+{
+	color:#AAAAAA;
+}
+
+
+.igdm_LucidDreamMenuItemVertical.igdm_LucidDreamMenuItemVerticalParent
+{
+	background-repeat:no-repeat;
+	background-position:center right ;
+	background-image: url(images/igwdm_submenuindicator.gif);
+}
+
+
+/* List Item (Li) */
+.igdm_LucidDreamMenuItemVerticalDisabled > a
+{
+	color:#CCCCCC;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalHover.igdm_LucidDreamMenuItemHorizontalParent
+{
+	background-repeat:repeat-x;
+	background-position:center top ;
+	font-weight:normal;
+	border:solid 1px Transparent;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalRootSelected > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootDisabled > a
+{
+	color:#AAAAAA;
+}
+
+
+.igdm_LucidDreamMenuItemHorizontalHover > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalRootActive > a
+{
+	color:White;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalActive.igdm_LucidDreamMenuItemVerticalParent
+{
+	background-color:#FF9933;
+	background-repeat:repeat-x;
+	background-position:center right ;
+	background-image: url(images/igdm_itemhoverparent.png);
+	font-weight:normal;
+	border:solid 1px #666666;
+}
+
+
+.igdm_LucidDreamMenuItemVerticalHover > a
+{
+	color:White;
+}
+
+

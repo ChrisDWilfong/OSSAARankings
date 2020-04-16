@@ -1,0 +1,659 @@
+.igg_RedPlanetControl
+{
+	font-size:11px;
+	font-family: Verdana;
+	border:solid 1px #696969;
+}
+
+
+.igg_RedPlanetHeader
+{
+	background-color:#7D0000;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_header.gif);
+	height: 25px;
+	color:White;
+}
+
+
+.igg_RedPlanetHeaderCaption
+{
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+.igg_RedPlanetFooter
+{
+	background-color:Transparent;
+	height: 22px;
+	line-height: 21px;
+	background-color:#eeeeee;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_FooterBG.png);
+}
+
+
+.igg_RedPlanetFooterCaption
+{
+	font-weight:normal;
+	font-size:10px;
+	padding-left:8px;
+	overflow: hidden;
+	text-align:left;
+}
+
+
+tbody.igg_RedPlanetItemIE6 tr td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/igg_item.gif);
+	border-top:solid 1px #D8D8D8;
+	padding:5px 8px 5px 8px;
+	overflow: hidden;
+	height: 20px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+tbody.igg_RedPlanetItem>tr>td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/igg_item.gif);
+	border-top:solid 1px #D8D8D8;
+	padding:5px 8px 5px 8px;
+	overflow: hidden;
+	height: 20px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igg_RedPlanetScrollbarIntersection
+{
+}
+
+
+.igg_RedPlanetRowSelector
+{
+	background-color:White;
+	border-top:solid 1px #D8D8D8;
+	border-right:solid 1px #D8D8D8;
+	width: 35px;
+	color:#7D0000;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igg_RedPlanetPager
+{
+	background-repeat:repeat-x;
+	background-image: url(images/igg_footer.gif);
+	padding-right:10px;
+	padding-bottom:10px;
+	text-align:right;
+}
+
+
+.igg_RedPlanetPageLink
+{
+	margin-right:10px;
+	cursor:hand;
+	color:DimGray;
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+
+.igg_RedPlanetFilterRuleDropDown
+{
+	background-color:White;
+	border:solid 1px #696969;
+	overflow: auto;
+	width: 150px;
+	max-height: 150px;
+	height: auto !important;
+	height: 150px;
+}
+
+
+.igg_RedPlanetFilterButton
+{
+	background-color:Transparent;
+	border-style:solid;
+	border-width:0px;
+	height: 18px;
+}
+
+
+.igg_RedPlanetResizeIndicator
+{
+	background-color:#BD0000;
+	width: 2px;
+}
+
+
+tbody tr.igg_RedPlanetAltIE6 td
+{
+	background-color:White;
+	padding:5px 8px 5px 8px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+tbody>tr.igg_RedPlanetAlt>td
+{
+	background-color:White;
+	padding:5px 8px 5px 8px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igg_RedPlanetHeaderRowSelector
+{
+	background-color:Transparent;
+	background-image: none;
+	border:solid 0px #FFFFFF;
+}
+
+
+.igg_RedPlanetFooterRowSelector
+{
+	background-color:Transparent;
+	background-image: none;
+	border:solid 0px #FFFFFF;
+}
+
+
+.igg_RedPlanetSelectedHeader
+{
+}
+
+tbody.igg_RedPlanetFixedColumnCellCssClass>tr>td
+{
+	background-image: none;
+	
+}
+
+.igg_RedPlanetFixedColumnFooterCssClass
+{
+	font-weight: bold;
+}
+
+.igg_RedPlanetPageCurrent
+{
+	margin-right:10px;
+}
+
+
+.igg_RedPlanetAddNewRowSelectorImageCssClass
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/addnewrow_image.gif);
+}
+
+
+.igg_RedPlanetAddNewRowSelectorCssClass
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+.igg_RedPlanetFilterRow
+{
+	font-size:10px;
+	font-family: Verdana;
+	border-top:solid 0px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	height: 22px;
+}
+
+
+.igg_RedPlanetFilterRuleDropDownItem
+{
+	font-size:11px;
+	font-family: Verdana;
+	padding:1px 3px 1px 3px;
+}
+
+
+.igg_RedPlanetFilterRowSelectorImage
+{
+}
+
+
+.igg_RedPlanetFilterRowSelectorCssClass
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tr.igg_RedPlanetFilterRowIE6 td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	color:Black;
+}
+
+
+tr.igg_RedPlanetFilterRow>td
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	color:Black;
+}
+
+
+tr.igg_RedPlanetFilterRowTopIE6 td
+{
+}
+
+
+tr.igg_RedPlanetFilterRowTop>td
+{
+}
+
+
+tr.igg_RedPlanetFilterRowBottomIE6 td
+{
+}
+
+
+tr.igg_RedPlanetFilterRowBottom>td
+{
+}
+
+
+.igg_RedPlanetHeaderScrollbarIntersection
+{
+}
+
+
+.igg_RedPlanetFooterScrollbarIntersection
+{
+}
+
+
+.igg_RedPlanetSelectedRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+	background-color: #333333;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+
+.igg_RedPlanetSelectedRowSelectorImage
+{
+}
+
+
+.igg_RedPlanetFilterRuleDropDownSelectedItem
+{
+	background-color:#7D0000;
+	background-image: url(images/igg_header.gif);
+	font-size:11px;
+	font-family: Verdana;
+	padding:1px 3px 1px 3px;
+	color:White;
+}
+
+
+.igg_RedPlanetAddNewRowScrollbarIntersection
+{
+	background-color:#F7F7F7;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tr.igg_RedPlanetAddNewRowIE6 td
+{
+	background-color:#F7F7F7;
+	font-size:10px;
+	font-family: Verdana;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	padding-left:7px;
+	height: 22px;
+	overflow: hidden;
+}
+
+
+tr.igg_RedPlanetAddNewRow>td
+{
+	background-color:#F7F7F7;
+	font-size:10px;
+	font-family: Verdana;
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 1px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+	padding-left:7px;
+	height: 22px;
+	overflow: hidden;
+	color: #000000;
+}
+
+
+TR.igg_RedPlanetAddNewRowTopIE6 TD
+{
+}
+
+
+TR.igg_RedPlanetAddNewRowTop>TD
+{
+}
+
+
+TR.igg_RedPlanetAddNewRowBottomIE6 TD
+{
+}
+
+
+TR.igg_RedPlanetAddNewRowBottom>TD
+{
+}
+
+
+.igg_RedPlanetFilterDisabled
+{
+}
+
+
+.igg_RedPlanetFilterScrollbarIntersection
+{
+	background-color:#EEEEEE;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_filterrow.gif);
+	border-top:solid 1px #CCCCCC;
+	border-right:solid 0px #CCCCCC;
+	border-bottom:solid 0px #CCCCCC;
+	border-left:solid 0px #CCCCCC;
+}
+
+
+tbody tr td.igg_RedPlanetSelectedCellIE6
+{
+	background-color:#515151;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/igg_selected.gif);
+	color:White;
+}
+
+
+tbody>tr>td.igg_RedPlanetSelectedCell
+{
+	background-color:#515151;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/igg_selected.gif);
+	color:White;
+}
+
+
+tbody tr td.igg_RedPlanetActiveCellIE6
+{
+}
+
+
+tbody>tr>td.igg_RedPlanetActiveCell
+{
+}
+
+
+.igg_RedPlanetActiveRow
+{
+}
+
+
+.igg_RedPlanetActiveColumn
+{
+}
+
+
+.igg_RedPlanetActiveRowSelectorImage
+{
+	color:White;
+}
+
+
+.igg_RedPlanetActiveRowSelector
+{
+	background-position:left center ;
+	background-image: url(images/selectedrowselector.gif);
+	background-repeat: no-repeat;
+	background-color: #333333;
+}
+
+
+.igg_RedPlanetFilterRuleDropDownHoverItem
+{
+	background-color:#7D0000;
+	background-image: url(images/igg_header.gif);
+	font-size:11px;
+	font-family: Verdana;
+	padding:1px 3px 1px 3px;
+	color:White;
+}
+
+
+.igg_RedPlanetEditCell
+{
+	background:White !important;
+	border:solid 1px #AAAAAA !important;
+}
+
+.igg_RedPlanetFixedColumnSeparatorCssClass
+{
+	width: 3px;
+	background-color: #696969; 
+}
+
+.igg_RedPlanetFixedColumnPinButtonCssClass
+{
+	padding: 0px 3px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.igg_RedPlanetFixedColumnHeaderCSSClass
+{
+}
+
+.igg_RedPlanetFilterButton>td
+{
+	border-top:solid 0px Transparent;
+	border-right:solid 0px Transparent;
+	border-bottom:solid 0px Transparent;
+	border-left:solid 0px Transparent;
+}
+
+
+.igg_RedPlanetVirtualScrollTooltip
+{
+	background-color:#7D0000;
+	background-repeat:repeat-x;
+	background-image: url(images/igg_header.gif);
+	font-size:10px;
+	border-width: 0px 1px 1px 1px;
+	border-color: #660000;
+	border-style: solid;
+	padding:3px;
+	color: #FFFFFF;
+	text-align:center;
+}
+
+
+.igg_RedPlanetTopDragIndicator
+{
+      background-image:url("images/igg_TopDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px; 
+      height:6px;
+      margin-top: 2px;
+      z-index: 100;
+}
+
+.igg_RedPlanetMiddleDragIndicator
+{
+      background-image:url("images/igg_MiddleDragIndicator.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      width:11px; 
+}
+
+.igg_RedPlanetBottomDragIndicator
+{
+      background-image:url("images/igg_BottomDragIndicator.png");
+      background-repeat: no-repeat;
+      width:11px; 
+      height:6px;
+      position: absolute;
+      margin-top: -2px;
+      z-index: 100;   
+}
+
+
+/*********************/
+/**  Summary styles **/
+/*********************/
+
+.igg_RedPlanetFilterRuleDropDown 
+{
+    font-family:verdana;
+    font-size:xx-small;
+    
+    background:#fff url(images/igg_SummaryDropDownBG.png) repeat-x scroll;
+    border:1px solid #83AFDF;
+    
+    /*Rounded corners*/
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    
+    /*Shadow*/
+    -moz-box-shadow: 0 4px 8px 0 #5A5A5A;
+    -webkit-box-shadow: 0 4px 8px 0 #5A5A5A;
+    box-shadow : 0 4px 8px 0 #5A5A5A; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A');
+    
+}
+
+.igg_RedPlanetFooterSummary
+{
+  border-bottom:1px solid #CBCBCB;
+  color:#444444;
+}
+
+/** Removed Property (Olga Kerchentseva mail 5/25/2010 )**/
+/*
+.igg_RedPlanetFooterSummariesCaption
+{
+    color:#000;
+    background:#88C2E8 url(images/igg_FooterSummariesBG.png) repeat-x scroll;
+} */
+
+.igg_RedPlanetSummaryDropDown
+{
+    font-family:verdana;
+    font-size:11px;
+    
+    background:#fff url(images/igg_SummaryDropDownBG.png) repeat-x scroll;
+    padding:12px;
+    border:1px solid #6A6A6A;
+    
+    /*Rounded corners*/
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    
+    /*Shadow*/
+    -moz-box-shadow: 0 4px 8px 0 #5A5A5A;
+    -webkit-box-shadow: 0 4px 8px 0 #5A5A5A;
+    box-shadow : 0 4px 8px 0 #5A5A5A; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#5A5A5A');
+    
+}
+    .igg_RedPlanetSummaryDropDown input
+    {
+        margin-top:10px;
+        margin-right:3px;
+        width:55px;
+        
+        border:1px solid #660000;
+        background: #990000 url(images/igg_ButtonsBG.png) repeat-x scroll;
+        color:#fff;
+        
+        -webkit-border-radius: 3px;    
+        -moz-border-radius: 3px;
+    }
+    
+.igg_RedPlanetSummaryDropDownItem
+{
+    cursor:default;
+}
+
+    .igg_RedPlanetSummaryDropDownItem img
+    {
+        margin-right:5px;
+        cursor:pointer;
+    }
+
+.igg_RedPlanetSummaryButton 
+{
+    background:none;
+    border:medium none;
+    cursor:pointer;
+    margin:0;
+    padding:0;
+}
+
+/******************/
+
+@media print{.igg_RedPlanetControl, .igg_RedPlanetControl div{width:auto !important; height:auto !important; overflow: visible !important;}}

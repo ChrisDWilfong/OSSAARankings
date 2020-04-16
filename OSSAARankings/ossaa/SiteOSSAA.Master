@@ -1,0 +1,88 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteOSSAA.Master.vb" Inherits="OSSAARankings.SiteOSSAA" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>OSSAA.COM (Oklahoma Secondary School Activities Association)</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Michroma:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css' />
+    <link href="Styles/SiteOSSAA.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <a href="OSSAAHome.aspx" style="padding-left:15px;"><img src="images/logoWebsiteWhite1.png" style="border:none;" /></a><br />
+                <a href="http://ossaarankings.mobi/docs/2015-16/2015-2016OSSAAContact.pdf" target="_blank" style="color:Yellow; font-family:Arial; font-size: 14px; font-weight:bold; padding-left:35px;">CONTACT US</a>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" >
+                    <Items>
+                        <asp:MenuItem Text="OSSAA Info" Value="OSSAA Info" Target="OSSAAInfo.aspx" Selectable="false">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Eligibility" Value="Eligibility" 
+                            NavigateUrl="EligibilityDb.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Classification" Value="Classification" Selectable="false">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Misc Forms" Value="Misc Forms" NavigateUrl="MiscFormsDb.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Non-Athletic" Value="Non-Athletic" Selectable="false">
+                            <asp:MenuItem Text="Academic Bowl" Value="Academic Bowl" NavigateUrl="NonAthleticAcademicBowlDb.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Music" Value="Music" NavigateUrl="NonAthleticMusicDb.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Speech/Debate" Value="Speech/Debate" NavigateUrl="NonAthleticSpeechDebateDb.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Sports" Value="Sports" Selectable="false" >
+                            <asp:MenuItem NavigateUrl="SportsBaseballDb.aspx" Text="Baseball" 
+                                Value="Baseball"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsBasketballDb.aspx" Text="Basketball" 
+                                Value="Basketball"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsCheerDb.aspx" Text="Cheer" 
+                                Value="Cheer"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsCrossCountryDb.aspx" Text="Cross Country" 
+                                Value="Cross Country"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsFastPitchDb.aspx" Text="Fast Pitch" 
+                                Value="Fast Pitch"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsFootballDb.aspx" Text="Football" 
+                                Value="Football"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsGolfDb.aspx" Text="Golf" 
+                                Value="Golf"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsSlowPitchDb.aspx" Text="Slow Pitch" 
+                                Value="Slow Pitch"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsSoccerDb.aspx" Text="Soccer" 
+                                Value="Soccer"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsSwimmingDb.aspx" Text="Swimming" 
+                                Value="Swimming"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsTennisDb.aspx" Text="Tennis" 
+                                Value="Tennis"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsTrackDb.aspx" Text="Track" 
+                                Value="Track"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsVolleyballDb.aspx" Text="Volleyball" 
+                                Value="Volleyball"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="SportsWrestlingDb.aspx" Text="Wrestling" 
+                                Value="Wrestling"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Officials" Value="Officials" 
+                            NavigateUrl="https://ossaa.arbitersports.com/front/106940/Site" Target="_blank"></asp:MenuItem>
+                        <asp:MenuItem Text="Sports Medicine" Value="SportsMedicine" NavigateUrl="SportsMedicineDb.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Champions" Value="Champions" NavigateUrl="Champions.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Media" Value="Media" NavigateUrl="MediaDb.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

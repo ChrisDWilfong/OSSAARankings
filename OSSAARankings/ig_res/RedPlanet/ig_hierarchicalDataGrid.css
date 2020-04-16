@@ -1,0 +1,136 @@
+﻿.ighg_RedPlanetExpandButton
+{
+	cursor: pointer;
+	cursor: hand;
+	padding-left: 5px;
+}
+
+TBODY>TR>TD.ighg_RedPlanetExpandableArea
+{
+	padding: 0px 0px 0px 25px;
+	background-color: #FFFFFF;
+	background-image: none;
+}
+
+.ighg_RedPlanetExpansionColumn
+{
+	width: 25px;
+	padding: 0 !important;
+}
+
+.ighg_RedPlanetExpansionColumnHeader
+{
+	width: 25px;
+}
+
+.ighg_RedPlanetExpansionColumnFooter
+{
+	width: 25px;
+}
+
+
+/* START -- GroupBy CSS Classes */
+.ighg_RedPlanetGroupIndentHeaderCell
+{
+}
+
+TBODY>TR.ighg_RedPlanetGroupedRow>TD
+{
+	background: #FFFFFF url(images/ighg_GroupedRowBg.png) repeat-x;
+}
+
+
+TBODY>TR>TD.ighg_RedPlanetGroupIndentCell
+{
+	border-right: 1px solid #D8D8D8;
+}
+
+.ighg_RedPlanetGroupArea
+{
+	background-color: #F3F4F3;
+	border-bottom: 1px solid #660000;
+	padding: 10px;
+}
+
+.ighg_RedPlanetGroupedColumn
+{
+	display: inline-block;
+	background: url(images/ighg_GroupedColumnBg.png) repeat-x;
+	height: 16px;
+	padding: 3px 5px 0px 10px;
+	color: #FFFFFF;
+}
+.ighg_RedPlanetGroupedColumnRightEdgeEnd
+{
+	display: inline-block;
+	background: url(images/ighg_GroupedColumnRightEdgeEndBg.gif) no-repeat;		
+	width: 10px;
+	height: 16px;
+	padding-top: 3px;
+}
+.ighg_RedPlanetGroupedColumnRightEdge
+{
+	display: inline-block;
+	background: url(images/ighg_GroupedColumnRightEdgeBg.png) no-repeat;
+	width: 10px;
+	height: 16px;
+	padding-top: 3px;
+}
+
+.ighg_RedPlanetGroupedColumnLeftEdge
+{
+	display: inline-block;
+	background: url(images/ighg_GroupedColumnLeftEdgeBg.gif) no-repeat;
+	width: 9px;
+	height: 16px;
+	padding-top: 3px;
+}
+
+.ighg_RedPlanetGroupedBand
+{
+	display: inline-block;
+	background: url(images/ighg_GroupedBandBg.png) repeat-x;
+	border-left: 1px solid #660000;
+	height: 16px;
+	padding: 3px 0px 0px 10px;
+	color: #FFFFFF;
+}
+.ighg_RedPlanetGroupedBandRightEdge
+{		
+	display: inline-block;
+	background: url(images/ighg_GroupedBandBg.png) repeat-x;
+	border-right: 1px solid #660000;
+	width: 10px;
+	height: 16px;
+	padding: 3px 0px 0px 0px;
+}
+
+.ighg_RedPlanetColumnGroupingTopDragIndicator
+{
+	background-image:url(images/ighg_TopDragIndicator.gif);
+	background-repeat: no-repeat;
+	width:5px; 
+	height:3px;
+	z-index: 100;
+}
+
+.ighg_RedPlanetColumnGroupingMiddleDragIndicator
+{
+      background-image:url(images/ighg_MiddleDragIndicator.gif);
+      background-repeat: repeat-y;
+      background-position: center;
+      width:3px; 
+}
+
+.ighg_RedPlanetColumnGroupingBottomDragIndicator
+{
+      background-image:url(images/ighg_BottomDragIndicator.gif);
+      background-repeat: no-repeat;
+      width:5px; 
+      height:3px;
+      position: absolute;
+      z-index: 100;   
+}
+/* END -- GroupBy CSS Classes */
+
+@media print{.ighg_RedPlanetControl, .ighg_RedPlanetControl div{width:auto !important; height:auto !important; overflow: visible !important;}}

@@ -1,0 +1,132 @@
+﻿body {
+    font-family: Century Gothic, Verdana;
+    background-color: lightgray;
+}
+.label {
+    font-family: Century Gothic, Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    color: Black;
+}
+.labelSmall {
+    font-family: Century Gothic, Verdana;
+    font-size: 8pt;
+    color: Black;
+}
+.checkbox {
+    font-family: Century Gothic, Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+    color: Black;
+}
+.button {
+    font-family: Century Gothic, Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: orange;
+    height: 50px;
+    width: 200px;
+}
+.buttonSave
+{
+    font-family: Century Gothic, Verdana;
+    font-size: 12pt;
+    background-color: Green;
+    color: White;
+    font-weight: bold;
+}
+.header {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    color: Navy;
+}
+.dropdown {
+    font-family: Century Gothic, Verdana;
+    font-size: 9pt;
+    background-color: #FFFF99;
+}
+.shadedheader {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: Gray;
+    padding-left:5px;
+    vertical-align:middle;
+}
+.shadedheaderP {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: Gray;
+    padding-left: 5px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.textbox {
+    font-family: Century Gothic, Verdana;
+    font-size: 12pt;
+    background-color: #FFFF99;
+    height: 28px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 5px;
+}
+.textboxTrans {
+    font-family: Century Gothic, Verdana;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.panelHeader {
+    font-family: Century Gothic, Verdana;
+    font-size: 12pt;
+    background-image: '~/images/red_bg1.gif';
+    color: Yellow;
+}
+.panelInst {
+    font-family: Century Gothic, Verdana;
+    font-size: 12pt;
+    color: Maroon;
+}
+.labelMessage {
+    font-family: Century Gothic, Verdana;
+    font-size: 9pt;
+    color: Red;
+}
+
+.labelStep {
+    font-family: Oswald;
+    font-size: 36px;
+    color: Red;
+    font-weight: bold;
+    padding-left: 10px;
+    -webkit-text-stroke: 0.5px white;
+}
+.labelPortal
+{
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.35em;
+    -webkit-text-stroke: 1px white;
+}
+
+.labelHeader
+{
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.15em;
+}
+
+.cellRadius {
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: -4px 6px 8px #000000;
+    text-align:center;
+    background-color: tan;
+}

@@ -1,0 +1,255 @@
+.igeb_LucidDreamControl
+{
+    background-color: transparent;
+    color: #000000;
+    font-size: xx-small;
+    font-family: Segoe UI, Verdana, Helvetica, sans-serif;
+    overflow-x: hidden;
+    border: solid 1px #CCCCCC;
+    border-top-width: 0px;
+	
+	/* IE6 fix to remove control's scroll bar */
+	_overflow:hidden!important;
+}
+
+.igeb_LucidDreamGroupLink
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+    /* Used to give padding to group icons */
+    padding-left:6px
+}
+
+
+.igeb_LucidDreamHolder
+{
+}
+
+.igeb_LucidDreamItemImage
+{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+
+.igeb_LucidDreamGroup
+{
+    display: block;
+    height: 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #003366;
+}
+
+.igeb_LucidDreamGroup a:visited
+{
+    color: #003366;
+}
+
+.igeb_LucidDreamGroup a
+{
+    color: #003366;
+}
+
+
+.igeb_LucidDreamGroupHover
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #0060BF;
+}
+
+.igeb_LucidDreamGroupHover a:visited
+{
+    color: #0060BF;
+}
+
+.igeb_LucidDreamGroupHover a
+{
+    color: #0060BF;
+}
+
+.igeb_LucidDreamGroupLabel
+{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+    text-decoration: none;
+}
+
+.igeb_LucidDreamItemLink
+{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.igeb_LucidDreamGroupSelected
+{
+    background-position: 0px -60px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupSelected a:visited
+{
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupSelected a
+{
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupActive
+{
+    background-position: 0px -60px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupActive a:visited
+{
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupActive a
+{
+    color: #003366;
+}
+
+.igeb_LucidDreamGroupDisabled
+{
+    background-position: 0px -90px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #003366;
+}
+
+
+
+.igeb_LucidDreamItem
+{
+    background-color: #FFFFFF;
+    /*line-height: 22px;*/
+}
+    /* IE 7 fix to icon bad alignment*/
+    .igeb_LucidDreamItem  ,.igeb_LucidDreamItemActive ,.igeb_LucidDreamItemSelected 
+    {
+       min-height:30px!important;
+       
+       /* IE6 specific fix */
+       _height:30px;
+    }
+
+.igeb_LucidDreamItemLabel
+{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+}
+
+.igeb_LucidDreamGroupExpanderImage
+{
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+.igeb_LucidDreamItemImage
+{
+    vertical-align: middle;
+}
+
+
+
+.igeb_LucidDreamItemSelected
+{
+    background-color: #FFCC33;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_ItemSelectedBg.png);
+    color: #FFFFFF;
+}
+
+.igeb_LucidDreamItemActive
+{
+    background-color: #FFCC33;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_ItemSelectedBg.png);
+    color: #FFFFFF;
+}
+
+.igeb_LucidDreamItemHover
+{
+    background-color: #FFCC33;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_ItemSelectedBg.png);
+    /*color: #FFFFFF;*/
+}
+
+.igeb_LucidDreamItemParent
+{
+}
+
+.igeb_LucidDreamItemDisabled
+{
+    
+}
+    /* IE 7 Disabled item fix */
+
+    .igeb_LucidDreamItemDisabled a:visited, .igeb_LucidDreamItemDisabled a
+    {
+        color: Gray;
+    }
+    
+.igeb_LucidDreamGroupContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.igeb_LucidDreamItemContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.igeb_LucidDreamItemHolder
+{
+}
+
+
+
+.igeb_LucidDreamItemHolder img
+{
+    vertical-align: middle;
+}
+
+

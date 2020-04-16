@@ -1,0 +1,246 @@
+.igeb_RedPlanetControl
+{
+    background-color: transparent;
+    color: #000000;
+    font-size: xx-small;
+    font-family: Segoe UI, Verdana, Helvetica, sans-serif;
+    overflow-x: hidden;
+    border: solid 1px #7F0000;
+    border-top-width: 0px;
+	
+	/* IE6 fix to remove control's scroll bar */
+	_overflow:hidden!important;	
+}
+
+.igeb_RedPlanetGroupLink
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+    /* Used to give padding to group icons */
+    padding-left:6px
+}
+
+.igeb_RedPlanetHolder
+{
+}
+
+.igeb_RedPlanetItemImage
+{
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.igeb_RedPlanetGroup
+{
+    display: block;
+    height: 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #FCD8D8;
+}
+
+.igeb_RedPlanetGroup a:visited
+{
+    color: #FCD8D8;
+}
+
+.igeb_RedPlanetGroup a
+{
+    color: #FCD8D8;
+}
+
+
+.igeb_RedPlanetGroupHover
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.igeb_RedPlanetGroupHover a:visited
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupHover a
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupLabel
+{
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+    text-decoration: none;
+}
+
+.igeb_RedPlanetItemLink
+{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.igeb_RedPlanetGroupSelected
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.igeb_RedPlanetGroupSelected a:visited
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupSelected a
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupActive
+{
+    background-position: 0px -30px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.igeb_RedPlanetGroupActive a:visited
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupActive a
+{
+    color: #FFFFFF;
+}
+
+.igeb_RedPlanetGroupDisabled
+{
+    background-position: 0px -60px;
+    background-repeat: repeat-x;
+    background-image: url(images/igeb_GroupBg.png);
+    color: #FFFFFF;
+}
+
+
+
+.igeb_RedPlanetItem
+{
+    background-color: #FFFFFF;
+    line-height: 22px;
+}
+    /* IE 7 fix to icon bad alignment*/
+    .igeb_RedPlanetItem  ,.igeb_RedPlanetItemActive ,.igeb_RedPlanetItemSelected 
+    {
+       min-height:30px!important;
+       
+       /* IE6 specific fix */
+       _height:30px;
+    }
+.igeb_RedPlanetItemLabel
+{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+}
+
+.igeb_RedPlanetGroupExpanderImage
+{
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.igeb_RedPlanetItemImage
+{
+    vertical-align: middle;
+}
+
+.igeb_RedPlanetItemSelected
+{
+    color: #FFFFFF;
+    background-color: #FCB1B1;
+}
+
+.igeb_RedPlanetItemActive
+{
+    color: #FFFFFF;
+    background-color: #FCB1B1;
+}
+
+.igeb_RedPlanetItemHover
+{
+    /*color: #FFFFFF;*/
+    background-color: #FCB1B1;
+}
+
+.igeb_RedPlanetItemParent
+{
+    background-image: url(images/igeb_Bullet.png);
+    background-repeat: no-repeat;
+}
+
+
+.igeb_RedPlanetItemDisabled
+{
+    
+}
+    /* IE 7 Disabled item fix */
+
+    .igeb_RedPlanetItemDisabled a:visited, .igeb_RedPlanetItemDisabled a
+    {
+        color: Gray;
+    }
+    
+    
+.igeb_RedPlanetGroupContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.igeb_RedPlanetItemContents
+{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.igeb_RedPlanetItemHolder
+{
+}
+
+
+
+.igeb_RedPlanetItemHolder img
+{
+    vertical-align: middle;
+}
+
+

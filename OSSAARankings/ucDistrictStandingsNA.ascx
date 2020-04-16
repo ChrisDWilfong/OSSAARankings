@@ -1,0 +1,2 @@
+﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ucDistrictStandingsNA.ascx.vb" Inherits="OSSAARankings.ucDistrictStandingsNA" %>
+<br /><asp:Label ID="lblHeader" runat="server" Text="No District Standings Available" Font-Names="Segoe UI, Helvetica, Helvetica Neue, Lucida Grande, Arial, Verdana, sans-serif" Font-Size="16px" Font-Bold="true"></asp:Label>
